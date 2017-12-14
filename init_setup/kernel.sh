@@ -5,7 +5,7 @@
 # File Name : kernel.sh
 # Purpose : 
 # Creation Date : 2017-01-03
-# Last Modified : 2017-12-13 19:49:16
+# Last Modified : 2017-12-13 21:03:55
 # Created By : Yongjae Choi <bestjae@naver.com>
 # 
 #
@@ -18,8 +18,8 @@
 #pushd /usr/src 
 #
 sudo wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.10.tar.xz 
-#
-#sudo tar -xvf linux-4.9*
+
+sudo tar -xvf linux-4.10*
 #
 #popd
 #
@@ -35,7 +35,7 @@ fi
 
 ###### Check Your Kernel Version ######
 
-pushd /usr/src/linux-4.9/ 
+pushd /usr/src/linux-4.10/ 
 
 sed -e "s/bestjae\ kernel.*mode/bestjae\ kernel\-${1}-mode/g" init/main.c > main.tmp
 mv main.tmp init/main.c 
