@@ -95,3 +95,16 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+files=$(find . -name '*.cpp' -o -name '*.c' -o -name '*.cc' -o -name '*.h' -o -name '*.s' -o -name ‘*.S’) cscope -i $$files
+set csprg=/usr/bin/cscope
+set csto=0
+set cst
+set nocsverb
+
+if filereadable("./cscope.out")
+	cs add cscope.out
+else 
+	cs add /usr/src/linux/cscope.out
+endif
+set csverb
+
