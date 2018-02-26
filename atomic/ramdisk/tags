@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIT_CORRUPTION	./ramdisk.c	/^	BIT_CORRUPTION = 0,$/;"	e	enum:__anon3	file:
+BIT_CORRUPTION	./ramdisk_ioctl/inject_error.c	/^	BIT_CORRUPTION = 0,$/;"	e	enum:__anon1	file:
+CC	./ramdisk_ioctl/Makefile	/^CC = gcc$/;"	m
+DATA_COUNT	./ramdisk.c	110;"	d	file:
+Device	./ramdisk.c	/^}Device;$/;"	v	typeref:struct:rdk_device	file:
+ERASE_ALL_DATA	./ramdisk.c	51;"	d	file:
+ERASE_ALL_DATA	./ramdisk_ioctl/inject_error.c	15;"	d	file:
+ERROR_TYPE_MAX	./ramdisk.c	/^	ERROR_TYPE_MAX,$/;"	e	enum:__anon3	file:
+ERROR_TYPE_MAX	./ramdisk_ioctl/inject_error.c	/^	ERROR_TYPE_MAX,$/;"	e	enum:__anon1	file:
+FLYING_WRITE	./ramdisk.c	/^	FLYING_WRITE,$/;"	e	enum:__anon3	file:
+FLYING_WRITE	./ramdisk_ioctl/inject_error.c	/^	FLYING_WRITE,$/;"	e	enum:__anon1	file:
+GET_LOGGING_DATA	./ramdisk.c	100;"	d	file:
+GET_LOGGING_DATA	./ramdisk_ioctl/inject_error.c	37;"	d	file:
+INJECT_DEFINED_ERROR	./ramdisk.c	48;"	d	file:
+INJECT_DEFINED_ERROR	./ramdisk_ioctl/inject_error.c	12;"	d	file:
+INJECT_ERROR	./ramdisk.c	35;"	d	file:
+INJECT_ERROR	./ramdisk_ioctl/inject_error.c	10;"	d	file:
+INJECT_ERROR_RELEASE	./ramdisk.c	50;"	d	file:
+INJECT_ERROR_RELEASE	./ramdisk_ioctl/inject_error.c	14;"	d	file:
+INJECT_ERROR_START	./ramdisk.c	49;"	d	file:
+INJECT_ERROR_START	./ramdisk_ioctl/inject_error.c	13;"	d	file:
+KDIR	./Makefile	/^KDIR ?= \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KERNEL3X	./ramdisk.c	34;"	d	file:
+KERNEL_SECTOR_SIZE	./ramdisk.c	31;"	d	file:
+NO_WRITTEN_DATA	./ramdisk.c	/^	NO_WRITTEN_DATA,$/;"	e	enum:__anon3	file:
+NO_WRITTEN_DATA	./ramdisk_ioctl/inject_error.c	/^	NO_WRITTEN_DATA,$/;"	e	enum:__anon1	file:
+OBJS	./ramdisk_ioctl/Makefile	/^OBJS = inject_error.o$/;"	m
+PWD	./Makefile	/^PWD := $(shell pwd)$/;"	m
+Queue	./ramdisk.c	/^static struct request_queue *Queue;$/;"	v	typeref:struct:request_queue	file:
+SET_LOGGING_DATA	./ramdisk.c	101;"	d	file:
+SET_LOGGING_DATA	./ramdisk_ioctl/inject_error.c	38;"	d	file:
+SHORN_WRITE	./ramdisk.c	/^	SHORN_WRITE,$/;"	e	enum:__anon3	file:
+SHORN_WRITE	./ramdisk_ioctl/inject_error.c	/^	SHORN_WRITE,$/;"	e	enum:__anon1	file:
+TARGET	./ramdisk_ioctl/Makefile	/^TARGET = inject_error $/;"	m
+UNSERIALIZABILITY	./ramdisk.c	/^	UNSERIALIZABILITY,$/;"	e	enum:__anon3	file:
+UNSERIALIZABILITY	./ramdisk_ioctl/inject_error.c	/^	UNSERIALIZABILITY,$/;"	e	enum:__anon1	file:
+VM_NODE	./ramdisk.c	32;"	d	file:
+Version	./ramdisk.c	/^static char *Version = "1.0";$/;"	v	file:
+__this_module	./ramdisk.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	./ramdisk.mod.c	/^__used$/;"	v	file:
+__used	./ramdisk.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+apply_error_injections	./ramdisk.c	/^static void apply_error_injections(struct rdk_device *dev, struct inject_error_t *error)$/;"	f	file:
+close_write_log	./ramdisk_ioctl/inject_error.c	/^void close_write_log(void)$/;"	f
+command	./ramdisk_ioctl/inject_error.c	/^int command = 0;$/;"	v
+counting_request_bio_number	./ramdisk.c	/^void counting_request_bio_number(struct request *req, int* count, int* size)$/;"	f
+data	./ramdisk.c	/^	u8 *data[VM_NODE];$/;"	m	struct:rdk_device	file:
+data_count	./ramdisk_ioctl/inject_error.c	/^unsigned long data_count = 0;$/;"	v
+dev_name	./ramdisk_ioctl/inject_error.c	/^char *dev_name = NULL;$/;"	v
+erase_all_data	./ramdisk.c	/^void erase_all_data(struct rdk_device *dev)$/;"	f
+err_type	./ramdisk_ioctl/inject_error.c	/^int err_type = -1;$/;"	v
+error	./ramdisk.c	/^	struct inject_error_t *error;$/;"	m	struct:inject_error_list_t	typeref:struct:inject_error_list_t::inject_error_t	file:
+error_head	./ramdisk.c	/^struct list_head error_head;$/;"	v	typeref:struct:list_head
+error_type	./ramdisk.c	/^	int error_type;$/;"	m	struct:inject_error_t	file:
+error_type	./ramdisk_ioctl/inject_error.c	/^	int error_type;$/;"	m	struct:inject_error_t	file:
+fp	./ramdisk_ioctl/inject_error.c	/^FILE *fp = NULL;$/;"	v
+gd	./ramdisk.c	/^	struct gendisk *gd;$/;"	m	struct:rdk_device	typeref:struct:rdk_device::gendisk	file:
+get_logging_output	./ramdisk_ioctl/inject_error.c	/^char *get_logging_output = NULL;$/;"	v
+help	./ramdisk_ioctl/inject_error.c	/^void help(void)$/;"	f
+init_log_list	./ramdisk.c	/^static void init_log_list(void)$/;"	f	file:
+init_write_log	./ramdisk_ioctl/inject_error.c	/^void init_write_log(void)$/;"	f
+inject_error_list_t	./ramdisk.c	/^struct inject_error_list_t {$/;"	s	file:
+inject_error_t	./ramdisk.c	/^struct inject_error_t {$/;"	s	file:
+inject_error_t	./ramdisk_ioctl/inject_error.c	/^struct inject_error_t {$/;"	s	file:
+list	./ramdisk.c	/^	struct list_head list;$/;"	m	struct:inject_error_list_t	typeref:struct:inject_error_list_t::list_head	file:
+lock	./ramdisk.c	/^	spinlock_t lock;$/;"	m	struct:rdk_device	file:
+log_idx	./ramdisk.c	/^unsigned long log_idx = 0;$/;"	v
+log_list	./ramdisk.c	/^struct rdk_log_data log_list[DATA_COUNT];$/;"	v	typeref:struct:rdk_log_data
+logging_enable	./ramdisk.c	/^int logging_enable = 0;$/;"	v
+logging_rdk_transfer	./ramdisk.c	/^static int logging_rdk_transfer(sector_t sector, $/;"	f	file:
+logical_block_size	./ramdisk.c	/^static int logical_block_size = 512;$/;"	v	file:
+main	./ramdisk_ioctl/inject_error.c	/^int main(int argc, char** argv)$/;"	f
+major_num	./ramdisk.c	/^static int major_num = 0;$/;"	v	file:
+new_page_idx	./ramdisk.c	/^		unsigned long new_page_idx;		\/* for flying_write *\/$/;"	m	union:inject_error_t::__anon4	file:
+new_page_idx	./ramdisk_ioctl/inject_error.c	/^		unsigned long new_page_idx;		\/* for flying_write *\/$/;"	m	union:inject_error_t::__anon2	file:
+new_page_idx	./ramdisk_ioctl/inject_error.c	/^unsigned long new_page_idx = 0;$/;"	v
+nsect	./ramdisk.c	/^	unsigned long nsect;$/;"	m	struct:rdk_log_data	file:
+nsect	./ramdisk_ioctl/inject_error.c	/^	unsigned long nsect;$/;"	m	struct:sbd_log_data	file:
+nsectors	./ramdisk.c	/^static int nsectors= 2*1024*1024;	\/* 1GB *\/$/;"	v	file:
+obj-m	./Makefile	/^	obj-m := ramdisk.o$/;"	m
+output_write	./ramdisk_ioctl/inject_error.c	/^void output_write(struct sbd_log_data *log)$/;"	f
+page_idx	./ramdisk.c	/^	unsigned long page_idx;$/;"	m	struct:inject_error_t	file:
+page_idx	./ramdisk_ioctl/inject_error.c	/^	unsigned long page_idx;$/;"	m	struct:inject_error_t	file:
+page_idx	./ramdisk_ioctl/inject_error.c	/^unsigned long page_idx = 0;$/;"	v
+pname	./ramdisk.c	/^	char pname[12];$/;"	m	struct:rdk_log_data	file:
+pname	./ramdisk_ioctl/inject_error.c	/^	char pname[16];$/;"	m	struct:sbd_log_data	file:
+rdk_device	./ramdisk.c	/^static struct rdk_device {$/;"	s	file:
+rdk_exit	./ramdisk.c	/^module_exit(rdk_exit);$/;"	v
+rdk_exit	./ramdisk.c	/^static void __exit rdk_exit(void)$/;"	f	file:
+rdk_getgeo	./ramdisk.c	/^int rdk_getgeo(struct block_device * block_device, struct hd_geometry * geo)$/;"	f
+rdk_init	./ramdisk.c	/^module_init(rdk_init);$/;"	v
+rdk_init	./ramdisk.c	/^static int __init rdk_init(void)$/;"	f	file:
+rdk_ioctl	./ramdisk.c	/^int rdk_ioctl(struct block_device * block_device, fmode_t fmode, unsigned int cmd, unsigned long arg)$/;"	f
+rdk_log_data	./ramdisk.c	/^struct rdk_log_data{$/;"	s	file:
+rdk_ops	./ramdisk.c	/^static struct block_device_operations rdk_ops = {$/;"	v	typeref:struct:block_device_operations	file:
+rdk_request	./ramdisk.c	/^static void rdk_request(struct request_queue *q)$/;"	f	file:
+rdk_transfer	./ramdisk.c	/^static void rdk_transfer(struct rdk_device *dev, sector_t sector,$/;"	f	file:
+release_error_lists	./ramdisk.c	/^static void release_error_lists(void)$/;"	f	file:
+release_error_lists_one	./ramdisk.c	/^static void release_error_lists_one(struct inject_error_list_t *node)$/;"	f	file:
+sbd_log_data	./ramdisk_ioctl/inject_error.c	/^struct sbd_log_data{$/;"	s	file:
+sector	./ramdisk.c	/^	sector_t sector;$/;"	m	struct:rdk_log_data	file:
+sector	./ramdisk_ioctl/inject_error.c	/^	unsigned long sector;$/;"	m	struct:sbd_log_data	file:
+send_idx	./ramdisk.c	/^unsigned long send_idx = 0;$/;"	v
+send_rdk_logging	./ramdisk.c	/^static int send_rdk_logging(struct rdk_log_data *log)$/;"	f	file:
+set_logging	./ramdisk_ioctl/inject_error.c	/^int set_logging = 0;$/;"	v
+shorn_error_type	./ramdisk.c	/^		int shorn_error_type;			\/* for shorn_write *\/$/;"	m	union:inject_error_t::__anon4	file:
+shorn_error_type	./ramdisk_ioctl/inject_error.c	/^		int shorn_error_type;					\/* for shorn_write *\/$/;"	m	union:inject_error_t::__anon2	file:
+shorn_error_type	./ramdisk_ioctl/inject_error.c	/^int shorn_error_type = 0;$/;"	v
+shorn_write_lbn	./ramdisk.c	/^long shorn_write_lbn = -1;$/;"	v
+size	./ramdisk.c	/^	unsigned long size;$/;"	m	struct:rdk_device	file:
+total_size	./ramdisk_ioctl/inject_error.c	/^unsigned long total_size = 0;$/;"	v
+write	./ramdisk.c	/^	int write;$/;"	m	struct:rdk_log_data	file:
+write	./ramdisk_ioctl/inject_error.c	/^	int write;$/;"	m	struct:sbd_log_data	file:
