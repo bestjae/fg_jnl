@@ -1,0 +1,1 @@
+cmd_/home/bestjae/atomic/hello_mod.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/bestjae/atomic/hello_mod.ko /home/bestjae/atomic/hello_mod.o /home/bestjae/atomic/hello_mod.mod.o

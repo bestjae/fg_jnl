@@ -222,6 +222,7 @@ void counting_request_bio_number(struct request *req, int* count, int* size)
 		cnt++;
 		bio_node = bio_node->bi_next;
 	}
+	printk("Bestjae : count = %d, bi_size = %d\n",cnt,bi_size);
 	*count = cnt;
 	*size = bi_size;
 }
@@ -229,6 +230,7 @@ void counting_request_bio_number(struct request *req, int* count, int* size)
 static void rdk_request(struct request_queue *q)
 {
 	struct request *req;
+	int cnt, size;
 #if 0
 	int cnt, size;
 #endif
@@ -247,6 +249,7 @@ static void rdk_request(struct request_queue *q)
 #endif
 	while(req != NULL)
 	{
+		counting_request_bio_number(req, &cnt, &size);
 		if(req == NULL || (req->cmd_type != REQ_TYPE_FS))
 		{
 			printk(KERN_ERR "Skip non-CMD request \n");

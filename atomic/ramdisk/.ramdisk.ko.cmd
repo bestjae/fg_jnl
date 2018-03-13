@@ -1,0 +1,1 @@
+cmd_/home/bestjae/atomic/ramdisk/ramdisk.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/bestjae/atomic/ramdisk/ramdisk.ko /home/bestjae/atomic/ramdisk/ramdisk.o /home/bestjae/atomic/ramdisk/ramdisk.mod.o

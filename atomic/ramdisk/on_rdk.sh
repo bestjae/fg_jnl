@@ -5,12 +5,11 @@
 # File Name : on_rdk.sh
 # Purpose : 
 # Creation Date : 2017-02-08
-# Last Modified : 2017-07-07 11:42:15
+# Last Modified : 2018-02-27 17:39:55
 # Created By : Yongjae Choi <bestjae@naver.com>
 # 
 #
 
-pushd ~/WDCS/ramdisk/ 
 echo "<< Umount mnt >>"
 umount ~/mnt
 echo "<< Remove Module ramdisk >>"
@@ -24,9 +23,8 @@ echo "<< Install Module Rdk >>"
 insmod ramdisk.ko
 
 echo "<< Make filesystem ext4 >>"
-mkfs.ext4 /dev/rdk
+mkfs.ext2 /dev/rdk
 
 echo "<< Mount mnt >>"
 mount /dev/rdk ~/mnt/
 
-popd
