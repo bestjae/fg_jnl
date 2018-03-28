@@ -5,7 +5,7 @@
 # File Name : init.sh
 # Purpose : init setting after install OS.
 # Creation Date : 2017-01-03
-# Last Modified : 2017-07-06 23:58:18
+# Last Modified : 2018-03-28 10:37:14
 # Created By : Yongjae Choi <bestjae@naver.com>
 # 
 #
@@ -40,13 +40,14 @@ apt-get install oracle-java8-installer -y
 # Setup Configure
 cp -r vim /etc/
 cp -r wuye.vim /usr/share/vim/vim74/colors/ 
+cp ./vimrc /etc/vim/vimrc
 #cp -r ./bashrc ~/.bashrc 
 #cp -r ./bash_color ~/.bash_color
 #mkdir /home/data/
 #tail -n2 fstab >> /etc/fstab
 #
-#echo "ClientAliveInterval 180" >> /etc/ssh/sshd_config
-#echo "ClientAliveCountMAX 9000" >> /etc/ssh/sshd_config
+echo "ClientAliveInterval 180" >> /etc/ssh/sshd_config
+echo "ClientAliveCountMAX 9000" >> /etc/ssh/sshd_config
 
 
 # Additional, You must be set network configure.

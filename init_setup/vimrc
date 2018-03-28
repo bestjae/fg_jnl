@@ -59,8 +59,8 @@ set hlsearch
 set autoindent
 set ruler
 set smartindent
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=8
+set tabstop=8
 set title
 set tags=/home/bestjae/linux/tags
 
@@ -104,7 +104,7 @@ set nocsverb
 if filereadable("./cscope.out")
 	cs add cscope.out
 else 
-	cs add /usr/src/linux/cscope.out
+	cs add /home/bestjae/linux/cscope.out
 endif
 set csverb
 
