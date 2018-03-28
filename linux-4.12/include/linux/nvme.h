@@ -907,6 +907,7 @@ struct nvme_command {
 		struct nvmf_property_get_command prop_get;
 		struct nvme_dbbuf dbbuf;
 	};
+	//int bestjae_nvme_command_type;
 };
 
 static inline bool nvme_is_write(struct nvme_command *cmd)

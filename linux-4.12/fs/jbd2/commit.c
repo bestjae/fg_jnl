@@ -32,6 +32,10 @@
 /*
  * IO end handler for temporary buffer_heads handling writes to the journal.
  */
+
+int bestjae_global = 500;
+atomic_t bestjae_atomic;
+
 static void journal_end_buffer_io_sync(struct buffer_head *bh, int uptodate)
 {
 	struct buffer_head *orig_bh = bh->b_private;
@@ -1137,3 +1141,6 @@ restart_loop:
 	journal->j_stats.run.rs_blocks_logged += stats.run.rs_blocks_logged;
 	spin_unlock(&journal->j_history_lock);
 }
+
+EXPORT_SYMBOL(bestjae_global);
+EXPORT_SYMBOL(bestjae_atomic);

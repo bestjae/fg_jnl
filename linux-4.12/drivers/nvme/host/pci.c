@@ -59,6 +59,9 @@
  */
 #define NVME_AQ_BLKMQ_DEPTH	(NVME_AQ_DEPTH - NVME_NR_AERS)
 
+extern int bestjae_global;
+extern atomic_t bestjae_atomic;
+
 static int use_threaded_interrupts;
 module_param(use_threaded_interrupts, int, 0);
 
@@ -153,6 +156,15 @@ struct nvme_queue {
 	u32 *dbbuf_cq_ei;
 };
 
+
+/*
+struct bestjae_nvme {
+	int bestjae_nvme_txnum;
+	int bestjae_nvme_num;
+
+};
+*/
+
 /*
  * The nvme_iod describes the data in an I/O, including the list of PRP
  * entries.  You can't see it in this data structure because C doesn't let
@@ -170,6 +182,8 @@ struct nvme_iod {
 	struct scatterlist meta_sg; /* metadata requires single contiguous buffer */
 	struct scatterlist *sg;
 	struct scatterlist inline_sg[0];
+
+	//struct bestjae_nvme;
 };
 
 /*
@@ -697,6 +711,11 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	struct request *req = bd->rq;
 	struct nvme_command cmnd;
 	int ret = BLK_MQ_RQ_QUEUE_OK;
+	
+	//bestjae
+	
+	u16 tail;
+	u16 head;
 
 	/*
 	 * If formated with metadata, require the block layer provide a buffer
@@ -733,9 +752,32 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 		spin_unlock_irq(&nvmeq->q_lock);
 		goto out_cleanup_iod;
 	}
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : bestjae_atomic_id = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
+	} else {
+		printk("bestjae : bestjae_atomic = 0\n");
+	}
+	/*
+	head = nvmeq->cq_head;
+	tail = nvmeq->sq_tail;
+	while(head <= tail) {
+		printk("bestjae : slba-%X / opcode-%X\n",nvmeq->sq_cmds[head].rw.slba,
+				nvmeq->sq_cmds[head].rw.opcode);
+		head++;
+	}
+	*/
+
 	__nvme_submit_cmd(nvmeq, &cmnd);
 	nvme_process_cq(nvmeq);
 	spin_unlock_irq(&nvmeq->q_lock);
+
+	//bestjae 
+	
+	//printk("bestjae : bjgb = %d\n",bestjae_global);
+	//printk("bestjae : rsvd = %x\n",cmnd.rw.rsvd2);
+	//printk("besjtae : cqeseen,tail,head,id-%d,%d,%d,%d",nvmeq->cqe_seen,nvmeq->sq_tail,nvmeq->cq_head,nvmeq->qid);
+	
 	return BLK_MQ_RQ_QUEUE_OK;
 out_cleanup_iod:
 	nvme_free_iod(dev, req);

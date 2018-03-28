@@ -4,7 +4,7 @@
  * File Name : hello_mod.c
  * Purpose : 
  * Creation Date : 2018-03-12
- * Last Modified : 2018-03-22 14:03:24
+ * Last Modified : 2018-03-27 20:08:44
  * Created By : Yongjae Choi <bestjae@naver.com>
  *  
  */
@@ -46,61 +46,53 @@
 #include "blk-wbt.h"
 
 #define procfs_name "bestjae_proc"
-#define LENGTH 1024
-int len, temp;
+#define COUNT_MAX 16
+int len;
 char *msg;
 
 struct task_struct *g_th_id=NULL;
-
+extern atomic_t bestjae_atomic;
 ssize_t read_proc(struct file *filp, char *buf, size_t count, loff_t *offp)
 {
-	if (count > temp) {
-		count = temp;
-	}
-	temp = temp - count;
-	copy_to_user(buf,msg,count);
-	if ( count == 0)
-		temp = len;
-	return count;
+	char buf_read[COUNT_MAX];
+	ssize_t len;
+
+	len = scnprintf(buf_read, COUNT_MAX, "%d\n",atomic_read(&bestjae_atomic));
+
+	return simple_read_from_buffer(buf, count, offp, buf_read, len);
 }
 
 ssize_t write_proc(struct file *filp, const char *buf, size_t count, loff_t *offp)
 {
-	if (count > LENGTH)
-		len = LENGTH;
-	else
-		len = count;
-	copy_from_user(msg, buf, count);
-	temp = len;
+	char buf_write[COUNT_MAX];
+	long temp_write;
+	size_t len_written;
+
+	if(count > COUNT_MAX)
+		count = COUNT_MAX;
+	memset(buf_write,0,COUNT_MAX);
 	
-	return count;
+	len_written = simple_write_to_buffer(buf_write,COUNT_MAX,offp,buf,count);
+	if(!kstrtol(buf_write,0,&temp_write)){
+		if( temp_write > 0)
+			atomic_set(&bestjae_atomic,1);
+		else if(temp_write == 0)	
+			atomic_set(&bestjae_atomic,0);
+		else
+			printk("bestjae : bestjae_atomic = %d",atomic_read(&bestjae_atomic));
+	}
+	return len_written;
 }
-static struct file_operations proc_fops = {
+static const struct file_operations proc_fops = {
 	.read = read_proc,
-	.write = write_proc
+	.write = write_proc,
+	.llseek = generic_file_llseek
 };
+
 void create_new_proc_entry(void)
 {
 	proc_create("bestjae_proc",0,NULL,&proc_fops);
-	msg = kmalloc(GFP_KERNEL, 10*sizeof(char));
 }
-
-static int kthread_example_thr_fun(void *arg)
-{
-	struct bio* bb;
-	printk(KERN_ALERT "@ %s() : called\n", __FUNCTION__);
-	while(!kthread_should_stop())
-	{
-		printk(KERN_ALERT "@ %s() : loop\n", __FUNCTION__);
-
-		submit_bio_wait(bb);
-
-
-		ssleep(1); 
-	}
-	printk(KERN_ALERT "@ %s() : kthread_should_stop() called. Bye.\n", __FUNCTION__);
-	return 0;
-} 
 
 static int __init kthread_example_init(void)
 {
@@ -109,6 +101,7 @@ static int __init kthread_example_init(void)
 	printk("bestjae : proc.c MODULE is loaded\n");
 
 	create_new_proc_entry();
+	msg = kmalloc(COUNT_MAX,GFP_KERNEL);
 
 	printk("bestjae : /proc/%s created\n",procfs_name);
 	/*

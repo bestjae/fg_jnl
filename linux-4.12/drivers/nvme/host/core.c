@@ -350,6 +350,8 @@ static inline void nvme_setup_rw(struct nvme_ns *ns, struct request *req,
 	cmnd->rw.nsid = cpu_to_le32(ns->ns_id);
 	cmnd->rw.slba = cpu_to_le64(nvme_block_nr(ns, blk_rq_pos(req)));
 	cmnd->rw.length = cpu_to_le16((blk_rq_bytes(req) >> ns->lba_shift) - 1);
+	//bestjae
+	cmnd->rw.rsvd2 = (req->bestjae_atomic_id << 32 ) + req->bestjae_atomic_num ;
 
 	if (ns->ms) {
 		switch (ns->pi_type) {

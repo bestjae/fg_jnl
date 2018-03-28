@@ -4,11 +4,15 @@
  * File Name : hello_mod.c
  * Purpose : 
  * Creation Date : 2018-03-12
- * Last Modified : 2018-03-22 13:04:04
+ * Last Modified : 2018-03-22 14:39:15
  * Created By : Yongjae Choi <bestjae@naver.com>
  *  
  */
 #include <linux/proc_fs.h>
+#include <linux/sched.h>
+#include <linux/sched.h>
+#include <asm/uaccess.h>
+
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/backing-dev.h>
@@ -41,33 +45,66 @@
 #include "blk-mq-sched.h"
 #include "blk-wbt.h"
 
+#define procfs_name "bestjae_proc"
+#define LENGTH 1024
+int len, temp;
+char *msg;
+
 struct task_struct *g_th_id=NULL;
 
-static int kthread_example_thr_fun(void *arg)
+ssize_t read_proc(struct file *filp, char *buf, size_t count, loff_t *offp)
 {
-	struct bio* bb;
-	printk(KERN_ALERT "@ %s() : called\n", __FUNCTION__);
-	while(!kthread_should_stop())
-	{
-		printk(KERN_ALERT "@ %s() : loop\n", __FUNCTION__);
-		
-		submit_bio_wait(bb);
-
-
-		ssleep(1); 
+	/*
+	if (count > temp) {
+		count = temp;
 	}
-	printk(KERN_ALERT "@ %s() : kthread_should_stop() called. Bye.\n", __FUNCTION__);
-	return 0;
-} 
+	temp = temp - count;
+	copy_to_user(buf,msg,count);
+	if ( count == 0)
+		temp = len;
+		*/
+	return count;
+}
+
+ssize_t write_proc(struct file *filp, const char *buf, size_t count, loff_t *offp)
+{
+	/*
+	if (count > LENGTH)
+		len = LENGTH;
+	else
+		len = count;
+	copy_from_user(msg, buf, count);
+	temp = len;
+	*/
+	count = 0;
+	return count;
+}
+static const struct file_operations proc_fops = {
+	.read = read_proc,
+//	.write = write_proc
+};
+
+void create_new_proc_entry(void)
+{
+	proc_create("bestjae_proc",0,NULL,&proc_fops);
+	
+	msg = kmalloc(GFP_KERNEL, 10*sizeof(char));
+}
 
 static int __init kthread_example_init(void)
 {
 	printk(KERN_ALERT "@ %s() : called\n", __FUNCTION__);
 
-	printk("Hello MODULE is loaded\n");
-	if(g_th_id == NULL){ 
-		g_th_id = (struct task_struct *)kthread_run(kthread_example_thr_fun, NULL, "kthread_example");
-	}
+	printk("bestjae : proc.c MODULE is loaded\n");
+
+	create_new_proc_entry();
+
+	printk("bestjae : /proc/%s created\n",procfs_name);
+	/*
+	   if(g_th_id == NULL){ 
+	   g_th_id = (struct task_struct *)kthread_run(kthread_example_thr_fun, NULL, "kthread_example");
+	   }
+	   */
 	return 0;
 } 
 

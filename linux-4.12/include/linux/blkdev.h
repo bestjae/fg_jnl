@@ -233,7 +233,9 @@ struct request {
 	 */
 	rq_end_io_fn *end_io;
 	void *end_io_data;
-
+	//bestjae	
+	u64 bestjae_atomic_num;
+	u64 bestjae_atomic_id;
 	/* for bidi */
 	struct request *next_rq;
 };

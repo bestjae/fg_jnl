@@ -43,6 +43,7 @@
 #include "blk-mq-sched.h"
 #include "blk-wbt.h"
 
+
 #ifdef CONFIG_DEBUG_FS
 struct dentry *blk_debugfs_root;
 #endif
@@ -54,6 +55,11 @@ EXPORT_TRACEPOINT_SYMBOL_GPL(block_split);
 EXPORT_TRACEPOINT_SYMBOL_GPL(block_unplug);
 
 DEFINE_IDA(blk_queue_ida);
+
+
+//bestjae
+
+extern atomic_t bestjae_atomic;
 
 /*
  * For the allocated request tables
@@ -1640,6 +1646,7 @@ void blk_init_request_from_bio(struct request *req, struct bio *bio)
 		req->cmd_flags |= REQ_FAILFAST_MASK;
 
 	req->__sector = bio->bi_iter.bi_sector;
+	
 	if (ioprio_valid(bio_prio(bio)))
 		req->ioprio = bio_prio(bio);
 	else if (ioc)
@@ -2018,7 +2025,6 @@ blk_qc_t generic_make_request(struct bio *bio)
 	 */
 	struct bio_list bio_list_on_stack[2];
 	blk_qc_t ret = BLK_QC_T_NONE;
-
 	if (!generic_make_request_checks(bio))
 		goto out;
 
@@ -2056,7 +2062,7 @@ blk_qc_t generic_make_request(struct bio *bio)
 	current->bio_list = bio_list_on_stack;
 	do {
 		struct request_queue *q = bdev_get_queue(bio->bi_bdev);
-
+		
 		if (likely(blk_queue_enter(q, false) == 0)) {
 			struct bio_list lower, same;
 
@@ -2086,6 +2092,8 @@ blk_qc_t generic_make_request(struct bio *bio)
 		}
 		bio = bio_list_pop(&bio_list_on_stack[0]);
 	} while (bio);
+
+
 	current->bio_list = NULL; /* deactivate */
 
 out:
@@ -2104,6 +2112,8 @@ EXPORT_SYMBOL(generic_make_request);
  */
 blk_qc_t submit_bio(struct bio *bio)
 {
+	char *bestjae_dev_name = "nvme0n1";
+	char bestjae_b[BDEVNAME_SIZE];
 	/*
 	 * If it's a regular read/write or a barrier with data attached,
 	 * go through the normal accounting stuff before submission.
@@ -2132,6 +2142,16 @@ blk_qc_t submit_bio(struct bio *bio)
 				bdevname(bio->bi_bdev, b),
 				count);
 		}
+		/*
+		if(atomic_read(&bestjae_atomic) == 1) {
+			bdevname(bio->bi_bdev,bestjae_b);
+			if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE))
+			{
+				bio->bestjae_bio = atomic_read(&bestjae_bio_global);
+				//atomic_inc(&bestjae_bio_global);
+			}
+		}
+		*/
 	}
 
 	return generic_make_request(bio);

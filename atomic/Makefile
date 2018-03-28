@@ -2,7 +2,7 @@ obj-m		:= mod.o
 
 CC		:= gcc
 
-KDIR		:= /usr/src/linux-4.1
+KDIR		:= /usr/src/linux-4.12
 
 PWD		:= $(shell pwd)
 

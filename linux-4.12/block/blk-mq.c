@@ -37,6 +37,8 @@
 #include "blk-wbt.h"
 #include "blk-mq-sched.h"
 
+extern atomic_t bestjae_atomic;
+
 static DEFINE_MUTEX(all_q_mutex);
 static LIST_HEAD(all_q_list);
 
@@ -241,6 +243,11 @@ void blk_mq_rq_ctx_init(struct request_queue *q, struct blk_mq_ctx *ctx,
 	rq->end_io_data = NULL;
 	rq->next_rq = NULL;
 
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		rq->bestjae_atomic_id = 100;
+		rq->bestjae_atomic_num++;
+	}
 	ctx->rq_dispatched[op_is_sync(op)]++;
 }
 EXPORT_SYMBOL_GPL(blk_mq_rq_ctx_init);
@@ -1538,7 +1545,7 @@ static blk_qc_t blk_mq_make_request(struct request_queue *q, struct bio *bio)
 	struct request *same_queue_rq = NULL;
 	blk_qc_t cookie;
 	unsigned int wb_acct;
-
+	
 	blk_queue_bounce(q, &bio);
 
 	blk_queue_split(q, &bio, q->bio_split);
