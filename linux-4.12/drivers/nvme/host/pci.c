@@ -754,9 +754,8 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	}
 	//bestjae
 	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : bestjae_atomic_id = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
-	} else {
-		printk("bestjae : bestjae_atomic = 0\n");
+		printk("bestjae : bestjae_req_bh = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
+		//printk("bestjae : bestjae_req_id = %d\n",cmnd.rw.rsvd2);
 	}
 	/*
 	head = nvmeq->cq_head;

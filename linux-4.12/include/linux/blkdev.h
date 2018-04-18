@@ -236,6 +236,7 @@ struct request {
 	//bestjae	
 	u64 bestjae_atomic_num;
 	u64 bestjae_atomic_id;
+	u64 bestjae_req_bh;
 	/* for bidi */
 	struct request *next_rq;
 };

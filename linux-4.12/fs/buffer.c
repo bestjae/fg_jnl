@@ -46,6 +46,11 @@
 #include <linux/bit_spinlock.h>
 #include <linux/pagevec.h>
 #include <trace/events/block.h>
+#include <linux/string.h>
+
+//bestjae 
+extern unsigned int bestjae_global;
+extern atomic_t bestjae_atomic;
 
 static int fsync_buffers_list(spinlock_t *lock, struct list_head *list);
 static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
@@ -1743,8 +1748,14 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 	int nr_underway = 0;
 	int write_flags = wbc_to_write_flags(wbc);
 
+	int bestjae_i = 0;  //bestjae 
+	int bestjae_j = 0;  //bestjae 
+	int bestjae_k = 0;  //bestjae 
+
 	head = create_page_buffers(page, inode,
 					(1 << BH_Dirty)|(1 << BH_Uptodate));
+
+	
 
 	/*
 	 * Be very careful.  We have no exclusion from __set_page_dirty_buffers
@@ -1794,6 +1805,7 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 		}
 		bh = bh->b_this_page;
 		block++;
+		bestjae_i++;
 	} while (bh != head);
 
 	do {
@@ -1817,6 +1829,7 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 		} else {
 			unlock_buffer(bh);
 		}
+		bestjae_j++;
 	} while ((bh = bh->b_this_page) != head);
 
 	/*
@@ -1833,8 +1846,14 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 			nr_underway++;
 		}
 		bh = next;
+		bestjae_k++;
 	} while (bh != head);
 	unlock_page(page);
+
+	//bestjae 
+	//if(atomic_read(&bestjae_atomic) == 1) {
+	//	printk("bestjae : block_write_full_page %d,%d,%d\n",bestjae_i,bestjae_j,bestjae_k);
+	//}
 
 	err = 0;
 done:
@@ -2001,6 +2020,10 @@ int __block_write_begin_int(struct page *page, loff_t pos, unsigned len,
 	unsigned blocksize, bbits;
 	struct buffer_head *bh, *head, *wait[2], **wait_bh=wait;
 
+	int bestjae_i = 0;
+	char *bestjae_dev_name = "nvme0n1";
+	char bestjae_b[BDEVNAME_SIZE];
+
 	BUG_ON(!PageLocked(page));
 	BUG_ON(from > PAGE_SIZE);
 	BUG_ON(to > PAGE_SIZE);
@@ -2014,6 +2037,7 @@ int __block_write_begin_int(struct page *page, loff_t pos, unsigned len,
 
 	for(bh = head, block_start = 0; bh != head || !block_start;
 	    block++, block_start=block_end, bh = bh->b_this_page) {
+		bestjae_i++;
 		block_end = block_start + blocksize;
 		if (block_end <= from || block_start >= to) {
 			if (PageUptodate(page)) {
@@ -2061,6 +2085,13 @@ int __block_write_begin_int(struct page *page, loff_t pos, unsigned len,
 			*wait_bh++=bh;
 		}
 	}
+	//bestjae 
+	if(atomic_read(&bestjae_atomic) == 1) {
+		bdevname(inode->i_bdev,bestjae_b);
+		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
+			printk("bestjae : write_begin_int, nvme0n1 - %d\n",bestjae_i);
+		}
+	}
 	/*
 	 * If we issued read requests - let them complete.
 	 */
@@ -2088,6 +2119,8 @@ static int __block_commit_write(struct inode *inode, struct page *page,
 	int partial = 0;
 	unsigned blocksize;
 	struct buffer_head *bh, *head;
+	
+	int bestjae_i = 0 ;
 
 	bh = head = page_buffers(page);
 	blocksize = bh->b_size;
@@ -2106,7 +2139,13 @@ static int __block_commit_write(struct inode *inode, struct page *page,
 
 		block_start = block_end;
 		bh = bh->b_this_page;
+		bestjae_i++;
 	} while (bh != head);
+	
+	//bestjae 
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : block_write_begin_int - %d\n",bestjae_i);
+	}
 
 	/*
 	 * If this is a partial write which happened to make all buffers
@@ -3090,10 +3129,20 @@ void guard_bio_eod(int op, struct bio *bio)
 	}
 }
 
+void bestjae_submit_bh(struct buffer_head *bh)
+{
+	if(atomic_read(&bestjae_atomic) == 1) {
+		bh->bestjae_bh_id = bestjae_global++;
+	}
+}
+EXPORT_SYMBOL(bestjae_submit_bh);
+
 static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 			 struct writeback_control *wbc)
 {
 	struct bio *bio;
+	char *bestjae_dev_name = "nvme0n1";
+	char bestjae_b[BDEVNAME_SIZE];
 
 	BUG_ON(!buffer_locked(bh));
 	BUG_ON(!buffer_mapped(bh));
@@ -3101,6 +3150,8 @@ static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 	BUG_ON(buffer_delay(bh));
 	BUG_ON(buffer_unwritten(bh));
 
+	//bestjae
+	bestjae_submit_bh(bh);
 	/*
 	 * Only clear out a write error when rewriting
 	 */
@@ -3126,7 +3177,6 @@ static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 
 	bio->bi_end_io = end_bio_bh_io_sync;
 	bio->bi_private = bh;
-	bio->bestjae_bio = 0;
 	/* Take care of bh's that straddle the end of the device */
 	guard_bio_eod(op, bio);
 
@@ -3136,6 +3186,22 @@ static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 		op_flags |= REQ_PRIO;
 	bio_set_op_attrs(bio, op, op_flags);
 
+	//bestjae 
+	/*
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : bh_id - %d\n",bh->bestjae_bh_id);
+		//bio->bestjae_bio_bh = bh->bestjae_bh_id;
+	}
+	*/
+	if(atomic_read(&bestjae_atomic) == 1) {
+		bdevname(bio->bi_bdev,bestjae_b);
+		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE))
+		{
+			bio->bi_iter.bestjae_bvec = bh->bestjae_bh_id;
+			printk("bestjae : bio->bi_iter->bj_bvec=%d\n",bio->bi_iter.bestjae_bvec);
+			//atomic_inc(&bestjae_bio_global);
+		}
+	}
 	submit_bio(bio);
 	return 0;
 }

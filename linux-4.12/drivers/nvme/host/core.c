@@ -35,6 +35,9 @@
 
 #define NVME_MINORS		(1U << MINORBITS)
 
+//bestjae
+extern atomic_t bestjae_atomic;
+
 unsigned char admin_timeout = 60;
 module_param(admin_timeout, byte, 0644);
 MODULE_PARM_DESC(admin_timeout, "timeout in seconds for admin commands");
@@ -351,7 +354,10 @@ static inline void nvme_setup_rw(struct nvme_ns *ns, struct request *req,
 	cmnd->rw.slba = cpu_to_le64(nvme_block_nr(ns, blk_rq_pos(req)));
 	cmnd->rw.length = cpu_to_le16((blk_rq_bytes(req) >> ns->lba_shift) - 1);
 	//bestjae
-	cmnd->rw.rsvd2 = (req->bestjae_atomic_id << 32 ) + req->bestjae_atomic_num ;
+	cmnd->rw.rsvd2 = (req->bestjae_req_bh << 32 ) + req->bestjae_atomic_num ;
+	//if ( atomic_read(&bestjae_atomic) == 1)	
+		//printk("bestjae : nvme_setup_rq\n");
+		//cmnd->rw.rsvd2 = req->bestjae_req_bh;
 
 	if (ns->ms) {
 		switch (ns->pi_type) {

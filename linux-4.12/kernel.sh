@@ -5,7 +5,7 @@
 # File Name : kernel.sh
 # Purpose : 
 # Creation Date : 2017-01-03
-# Last Modified : 2018-03-19 09:53:11
+# Last Modified : 2018-03-28 11:26:40
 # Created By : Yongjae Choi <bestjae@naver.com>
 # 
 #
@@ -31,6 +31,6 @@ make modules_install
 
 make install
 
-cp /boot/grub/grub.cfg ~/grub.old
+cp /boot/grub/grub.cfg ./grub.old
 
-cp ~/grub.cfg /boot/grub/
+cp ./grub.cfg /boot/grub/

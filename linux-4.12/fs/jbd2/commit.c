@@ -33,7 +33,7 @@
  * IO end handler for temporary buffer_heads handling writes to the journal.
  */
 
-int bestjae_global = 500;
+unsigned int bestjae_global = 0;
 atomic_t bestjae_atomic;
 
 static void journal_end_buffer_io_sync(struct buffer_head *bh, int uptodate)

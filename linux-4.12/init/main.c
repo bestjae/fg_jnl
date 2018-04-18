@@ -95,6 +95,7 @@
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 
+extern unsigned int bestjae_global;
 static int kernel_init(void *);
 
 extern void init_IRQ(void);
@@ -489,6 +490,9 @@ asmlinkage __visible void __init start_kernel(void)
 {
 	char *command_line;
 	char *after_dashes;
+
+	//bestjae 
+	bestjae_global = 0;
 
 	set_task_stack_end_magic(&init_task);
 	smp_setup_processor_id();

@@ -75,6 +75,7 @@ struct buffer_head {
 	struct address_space *b_assoc_map;	/* mapping this buffer is
 						   associated with */
 	atomic_t b_count;		/* users using this buffer_head */
+	unsigned int bestjae_bh_id;
 };
 
 /*

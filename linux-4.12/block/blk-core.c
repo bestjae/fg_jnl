@@ -60,6 +60,7 @@ DEFINE_IDA(blk_queue_ida);
 //bestjae
 
 extern atomic_t bestjae_atomic;
+extern unsigned int bestjae_global;
 
 /*
  * For the allocated request tables
@@ -1646,7 +1647,10 @@ void blk_init_request_from_bio(struct request *req, struct bio *bio)
 		req->cmd_flags |= REQ_FAILFAST_MASK;
 
 	req->__sector = bio->bi_iter.bi_sector;
-	
+	if(atomic_read(&bestjae_atomic) == 1 )
+	{
+		req->bestjae_req_bh = bio->bi_iter.bestjae_bvec;
+	}
 	if (ioprio_valid(bio_prio(bio)))
 		req->ioprio = bio_prio(bio);
 	else if (ioc)
@@ -2112,8 +2116,6 @@ EXPORT_SYMBOL(generic_make_request);
  */
 blk_qc_t submit_bio(struct bio *bio)
 {
-	char *bestjae_dev_name = "nvme0n1";
-	char bestjae_b[BDEVNAME_SIZE];
 	/*
 	 * If it's a regular read/write or a barrier with data attached,
 	 * go through the normal accounting stuff before submission.
@@ -2142,16 +2144,6 @@ blk_qc_t submit_bio(struct bio *bio)
 				bdevname(bio->bi_bdev, b),
 				count);
 		}
-		/*
-		if(atomic_read(&bestjae_atomic) == 1) {
-			bdevname(bio->bi_bdev,bestjae_b);
-			if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE))
-			{
-				bio->bestjae_bio = atomic_read(&bestjae_bio_global);
-				//atomic_inc(&bestjae_bio_global);
-			}
-		}
-		*/
 	}
 
 	return generic_make_request(bio);

@@ -739,7 +739,6 @@ int bio_add_pc_page(struct request_queue *q, struct bio *bio, struct page
 {
 	int retried_segments = 0;
 	struct bio_vec *bvec;
-	bestjae_global += 1000;
 	/*
 	 * cloned bio must not modify vec list
 	 */
@@ -949,8 +948,6 @@ int submit_bio_wait(struct bio *bio)
 	bio->bi_opf |= REQ_SYNC;
 	submit_bio(bio);
 	wait_for_completion_io(&ret.event);
-	
-	bestjae_global += 1;
 
 	return ret.error;
 }

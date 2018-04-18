@@ -28,6 +28,8 @@
 #endif
 
 #define KB_IN_SECTORS 2
+//bestjae
+extern atomic_t bestjae_atomic;
 
 /*
  * A deserialized copy of the on-disk structure laid out in struct
@@ -182,12 +184,20 @@ static int fat_get_block(struct inode *inode, sector_t iblock,
 
 static int fat_writepage(struct page *page, struct writeback_control *wbc)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : fat_writepage\n");
+	}
 	return block_write_full_page(page, fat_get_block, wbc);
 }
 
 static int fat_writepages(struct address_space *mapping,
 			  struct writeback_control *wbc)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : fat_writepages\n");
+	}
 	return mpage_writepages(mapping, wbc, fat_get_block);
 }
 
