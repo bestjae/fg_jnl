@@ -243,11 +243,13 @@ void blk_mq_rq_ctx_init(struct request_queue *q, struct blk_mq_ctx *ctx,
 	rq->end_io_data = NULL;
 	rq->next_rq = NULL;
 
-	//bestjae
+	//bestjae 
+	/*
 	if(atomic_read(&bestjae_atomic) == 1) {
 		rq->bestjae_atomic_id = 100;
 		rq->bestjae_atomic_num++;
 	}
+	*/
 	ctx->rq_dispatched[op_is_sync(op)]++;
 }
 EXPORT_SYMBOL_GPL(blk_mq_rq_ctx_init);

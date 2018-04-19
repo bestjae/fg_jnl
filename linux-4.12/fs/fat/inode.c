@@ -30,6 +30,8 @@
 #define KB_IN_SECTORS 2
 //bestjae
 extern atomic_t bestjae_atomic;
+unsigned int bestjae_fat_write_count;
+unsigned int bestjae_fat_id;
 
 /*
  * A deserialized copy of the on-disk structure laid out in struct
@@ -186,7 +188,7 @@ static int fat_writepage(struct page *page, struct writeback_control *wbc)
 {
 	//bestjae	
 	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : fat_writepage\n");
+		printk("bestjae : %s\n",__FUNCTION__);
 	}
 	return block_write_full_page(page, fat_get_block, wbc);
 }
@@ -196,19 +198,29 @@ static int fat_writepages(struct address_space *mapping,
 {
 	//bestjae	
 	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : fat_writepages\n");
+		printk("bestjae : %s\n",__FUNCTION__);
+		wbc->bestjae_wbc = ++bestjae_fat_id;
+		printk("bestjae : wbc.bestjae - %d\n",wbc->bestjae_wbc);
 	}
 	return mpage_writepages(mapping, wbc, fat_get_block);
 }
 
 static int fat_readpage(struct file *file, struct page *page)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return mpage_readpage(page, fat_get_block);
 }
 
 static int fat_readpages(struct file *file, struct address_space *mapping,
 			 struct list_head *pages, unsigned nr_pages)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return mpage_readpages(mapping, pages, nr_pages, fat_get_block);
 }
 
@@ -226,6 +238,11 @@ static int fat_write_begin(struct file *file, struct address_space *mapping,
 			loff_t pos, unsigned len, unsigned flags,
 			struct page **pagep, void **fsdata)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+		bestjae_fat_write_count++;
+	}
 	int err;
 
 	*pagep = NULL;
@@ -243,6 +260,10 @@ static int fat_write_end(struct file *file, struct address_space *mapping,
 {
 	struct inode *inode = mapping->host;
 	int err;
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	err = generic_write_end(file, mapping, pos, len, copied, pagep, fsdata);
 	if (err < len)
 		fat_write_failed(mapping, pos + len);
@@ -263,6 +284,10 @@ static ssize_t fat_direct_IO(struct kiocb *iocb, struct iov_iter *iter)
 	loff_t offset = iocb->ki_pos;
 	ssize_t ret;
 
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	if (iov_iter_rw(iter) == WRITE) {
 		/*
 		 * FIXME: blockdev_direct_IO() doesn't use ->write_begin(),
@@ -297,6 +322,10 @@ static int fat_get_block_bmap(struct inode *inode, sector_t iblock,
 	int err;
 	sector_t bmap;
 	unsigned long mapped_blocks;
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	BUG_ON(create != 0);
 
@@ -589,6 +618,10 @@ struct inode *fat_build_inode(struct super_block *sb,
 {
 	struct inode *inode;
 	int err;
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	fat_lock_build_inode(MSDOS_SB(sb));
 	inode = fat_iget(sb, i_pos);
@@ -665,6 +698,10 @@ static void fat_set_state(struct super_block *sb,
 	struct buffer_head *bh;
 	struct fat_boot_sector *b;
 	struct msdos_sb_info *sbi = MSDOS_SB(sb);
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	/* do not change any thing if mounted read only */
 	if ((sb->s_flags & MS_RDONLY) && !force)
@@ -733,6 +770,10 @@ static struct kmem_cache *fat_inode_cachep;
 static struct inode *fat_alloc_inode(struct super_block *sb)
 {
 	struct msdos_inode_info *ei;
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	ei = kmem_cache_alloc(fat_inode_cachep, GFP_NOFS);
 	if (!ei)
 		return NULL;
@@ -834,6 +875,10 @@ static int fat_statfs(struct dentry *dentry, struct kstatfs *buf)
 
 static int __fat_write_inode(struct inode *inode, int wait)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	struct super_block *sb = inode->i_sb;
 	struct msdos_sb_info *sbi = MSDOS_SB(sb);
 	struct buffer_head *bh;
@@ -891,6 +936,10 @@ retry:
 
 static int fat_write_inode(struct inode *inode, struct writeback_control *wbc)
 {
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s= fat_id=%d\n",__FUNCTION__,bestjae_fat_id);
+	}
 	int err;
 
 	if (inode->i_ino == MSDOS_FSINFO_INO) {
@@ -901,7 +950,8 @@ static int fat_write_inode(struct inode *inode, struct writeback_control *wbc)
 		mutex_unlock(&MSDOS_SB(sb)->s_lock);
 	} else
 		err = __fat_write_inode(inode, wbc->sync_mode == WB_SYNC_ALL);
-
+	//bestjae
+	bestjae_fat_write_count = 0;
 	return err;
 }
 
@@ -1917,6 +1967,10 @@ static int writeback_inode(struct inode *inode)
 int fat_flush_inodes(struct super_block *sb, struct inode *i1, struct inode *i2)
 {
 	int ret = 0;
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 	if (!MSDOS_SB(sb)->options.flush)
 		return 0;
 	if (i1)
@@ -1955,6 +2009,9 @@ static void __exit exit_fat_fs(void)
 	fat_cache_destroy();
 	fat_destroy_inodecache();
 }
+
+EXPORT_SYMBOL(bestjae_fat_write_count);
+EXPORT_SYMBOL(bestjae_fat_id);
 
 module_init(init_fat_fs)
 module_exit(exit_fat_fs)

@@ -1647,9 +1647,10 @@ void blk_init_request_from_bio(struct request *req, struct bio *bio)
 		req->cmd_flags |= REQ_FAILFAST_MASK;
 
 	req->__sector = bio->bi_iter.bi_sector;
-	if(atomic_read(&bestjae_atomic) == 1 )
+	if(atomic_read(&bestjae_atomic) == 1 ) //bestjae
 	{
 		req->bestjae_req_bh = bio->bi_iter.bestjae_bvec;
+		printk("bestjae : (%s) req->bestjae_req_bh-%d\n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
 	}
 	if (ioprio_valid(bio_prio(bio)))
 		req->ioprio = bio_prio(bio);

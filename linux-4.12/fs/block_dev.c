@@ -36,6 +36,9 @@
 #include <linux/uaccess.h>
 #include "internal.h"
 
+//bestjae
+extern atomic_t bestjae_atomic;
+
 struct bdev_inode {
 	struct block_device bdev;
 	struct inode vfs_inode;

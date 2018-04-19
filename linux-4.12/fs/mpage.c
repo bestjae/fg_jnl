@@ -31,6 +31,9 @@
 #include <linux/cleancache.h>
 #include "internal.h"
 
+extern atomic_t bestjae_atomic;
+extern unsigned int bestjae_fat_id;
+
 /*
  * I/O completion handler for multipage BIOs.
  *
@@ -58,6 +61,9 @@ static void mpage_end_io(struct bio *bio)
 
 static struct bio *mpage_bio_submit(int op, int op_flags, struct bio *bio)
 {
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s - bestjae_bvec-%d \n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
+	}
 	bio->bi_end_io = mpage_end_io;
 	bio_set_op_attrs(bio, op, op_flags);
 	guard_bio_eod(op, bio);
@@ -596,9 +602,13 @@ page_is_mapped:
 	/*
 	 * This page will go to BIO.  Do we need to send this BIO off first?
 	 */
-	if (bio && mpd->last_block_in_bio != blocks[0] - 1)
+	if (bio && mpd->last_block_in_bio != blocks[0] - 1) {
+		//bestjae 
+		if(atomic_read(&bestjae_atomic) == 1) {
+			bio->bi_iter.bestjae_bvec = wbc->bestjae_wbc;
+		}
 		bio = mpage_bio_submit(REQ_OP_WRITE, op_flags, bio);
-
+	}
 alloc_new:
 	if (bio == NULL) {
 		if (first_unmapped == blocks_per_page) {
@@ -624,6 +634,10 @@ alloc_new:
 	wbc_account_io(wbc, page, PAGE_SIZE);
 	length = first_unmapped << blkbits;
 	if (bio_add_page(bio, page, length, 0) < length) {
+		//bestjae 
+		if(atomic_read(&bestjae_atomic) == 1) {
+			bio->bi_iter.bestjae_bvec = wbc->bestjae_wbc;
+		}
 		bio = mpage_bio_submit(REQ_OP_WRITE, op_flags, bio);
 		goto alloc_new;
 	}
@@ -634,6 +648,11 @@ alloc_new:
 	set_page_writeback(page);
 	unlock_page(page);
 	if (boundary || (first_unmapped != blocks_per_page)) {
+		//bestjae 
+		if(atomic_read(&bestjae_atomic) == 1) {
+			bio->bi_iter.bestjae_bvec = wbc->bestjae_wbc;
+		}
+		
 		bio = mpage_bio_submit(REQ_OP_WRITE, op_flags, bio);
 		if (boundary_block) {
 			write_boundary_block(boundary_bdev,
@@ -645,9 +664,13 @@ alloc_new:
 	goto out;
 
 confused:
-	if (bio)
+	if (bio){
+		//bestjae 
+		if(atomic_read(&bestjae_atomic) == 1) {
+			bio->bi_iter.bestjae_bvec = wbc->bestjae_wbc;
+		}
 		bio = mpage_bio_submit(REQ_OP_WRITE, op_flags, bio);
-
+	}
 	if (mpd->use_writepage) {
 		ret = mapping->a_ops->writepage(page, wbc);
 	} else {
@@ -689,6 +712,9 @@ mpage_writepages(struct address_space *mapping,
 	struct blk_plug plug;
 	int ret;
 
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s \n",__FUNCTION__);
+	}
 	blk_start_plug(&plug);
 
 	if (!get_block)
@@ -702,6 +728,8 @@ mpage_writepages(struct address_space *mapping,
 		};
 
 		ret = write_cache_pages(mapping, wbc, __mpage_writepage, &mpd);
+		//bestjae
+		//mpd.bio.bi_iter.bestjae_bvec = bestjae_fat_id;
 		if (mpd.bio) {
 			int op_flags = (wbc->sync_mode == WB_SYNC_ALL ?
 				  REQ_SYNC : 0);

@@ -51,6 +51,7 @@
 //bestjae 
 extern unsigned int bestjae_global;
 extern atomic_t bestjae_atomic;
+extern unsigned int bestjae_fat_id;
 
 static int fsync_buffers_list(spinlock_t *lock, struct list_head *list);
 static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
@@ -1748,10 +1749,6 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 	int nr_underway = 0;
 	int write_flags = wbc_to_write_flags(wbc);
 
-	int bestjae_i = 0;  //bestjae 
-	int bestjae_j = 0;  //bestjae 
-	int bestjae_k = 0;  //bestjae 
-
 	head = create_page_buffers(page, inode,
 					(1 << BH_Dirty)|(1 << BH_Uptodate));
 
@@ -1805,7 +1802,6 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 		}
 		bh = bh->b_this_page;
 		block++;
-		bestjae_i++;
 	} while (bh != head);
 
 	do {
@@ -1829,7 +1825,6 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 		} else {
 			unlock_buffer(bh);
 		}
-		bestjae_j++;
 	} while ((bh = bh->b_this_page) != head);
 
 	/*
@@ -1846,7 +1841,6 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 			nr_underway++;
 		}
 		bh = next;
-		bestjae_k++;
 	} while (bh != head);
 	unlock_page(page);
 
@@ -2087,10 +2081,11 @@ int __block_write_begin_int(struct page *page, loff_t pos, unsigned len,
 	}
 	//bestjae 
 	if(atomic_read(&bestjae_atomic) == 1) {
-		bdevname(inode->i_bdev,bestjae_b);
-		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
-			printk("bestjae : write_begin_int, nvme0n1 - %d\n",bestjae_i);
-		}
+		printk("bestjae : %s \n",__FUNCTION__);
+		//bdevname(inode->i_bdev,bestjae_b);
+		//if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
+		//	printk("bestjae : write_begin_int, nvme0n1 - %d\n",bestjae_i);
+		//}
 	}
 	/*
 	 * If we issued read requests - let them complete.
@@ -2142,11 +2137,6 @@ static int __block_commit_write(struct inode *inode, struct page *page,
 		bestjae_i++;
 	} while (bh != head);
 	
-	//bestjae 
-	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : block_write_begin_int - %d\n",bestjae_i);
-	}
-
 	/*
 	 * If this is a partial write which happened to make all buffers
 	 * uptodate then we can optimize away a bogus readpage() for
@@ -3151,7 +3141,7 @@ static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 	BUG_ON(buffer_unwritten(bh));
 
 	//bestjae
-	bestjae_submit_bh(bh);
+	//bestjae_submit_bh(bh);
 	/*
 	 * Only clear out a write error when rewriting
 	 */
@@ -3190,16 +3180,16 @@ static int submit_bh_wbc(int op, int op_flags, struct buffer_head *bh,
 	/*
 	if(atomic_read(&bestjae_atomic) == 1) {
 		printk("bestjae : bh_id - %d\n",bh->bestjae_bh_id);
-		//bio->bestjae_bio_bh = bh->bestjae_bh_id;
+		bio->bi_iter.bestjae_bvec = wbc->bestjae_wbc;
 	}
 	*/
 	if(atomic_read(&bestjae_atomic) == 1) {
 		bdevname(bio->bi_bdev,bestjae_b);
 		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE))
 		{
-			bio->bi_iter.bestjae_bvec = bh->bestjae_bh_id;
-			printk("bestjae : bio->bi_iter->bj_bvec=%d\n",bio->bi_iter.bestjae_bvec);
-			//atomic_inc(&bestjae_bio_global);
+			bio->bi_iter.bestjae_bvec = bestjae_fat_id;
+			//bio->bi_iter.bestjae_bvec = bh->bestjae_bh_id;
+			//printk("bestjae : bh->bestjae_bh_id,wbc = %d,%d\n",bh->bestjae_bh_id,wbc->bestjae_wbc);
 		}
 	}
 	submit_bio(bio);

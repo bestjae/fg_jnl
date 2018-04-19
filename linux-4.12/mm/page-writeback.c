@@ -42,6 +42,9 @@
 
 #include "internal.h"
 
+//bestjae
+extern atomic_t bestjae_atomic;
+
 /*
  * Sleep at most 200ms at a time in balance_dirty_pages().
  */
@@ -2167,6 +2170,13 @@ int write_cache_pages(struct address_space *mapping,
 	int range_whole = 0;
 	int tag;
 
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s \n",__FUNCTION__);
+	}
+
+
+
 	pagevec_init(&pvec, 0);
 	if (wbc->range_cyclic) {
 		writeback_index = mapping->writeback_index; /* prev offset */
@@ -2201,7 +2211,6 @@ retry:
 
 		for (i = 0; i < nr_pages; i++) {
 			struct page *page = pvec.pages[i];
-
 			/*
 			 * At this point, the page may be truncated or
 			 * invalidated (changing page->mapping to NULL), or
@@ -2333,7 +2342,6 @@ int generic_writepages(struct address_space *mapping,
 {
 	struct blk_plug plug;
 	int ret;
-
 	/* deal with chardevs and other special file */
 	if (!mapping->a_ops->writepage)
 		return 0;

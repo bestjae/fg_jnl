@@ -61,6 +61,7 @@
 
 extern int bestjae_global;
 extern atomic_t bestjae_atomic;
+int bestjae_count;
 
 static int use_threaded_interrupts;
 module_param(use_threaded_interrupts, int, 0);
@@ -713,7 +714,6 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	int ret = BLK_MQ_RQ_QUEUE_OK;
 	
 	//bestjae
-	
 	u16 tail;
 	u16 head;
 
@@ -754,7 +754,14 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	}
 	//bestjae
 	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : bestjae_req_bh = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
+		printk("bestjae : (nvme)bestjae_req_bh = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
+		if( (cmnd.rw.rsvd2>>32) == 5) {
+			printk("bestjae : bestjae_count - %d\n",++bestjae_count);
+			if(bestjae_count == 3) {
+				printk("bestjae : nvme skip\n");
+				goto skip;
+			}
+		}
 		//printk("bestjae : bestjae_req_id = %d\n",cmnd.rw.rsvd2);
 	}
 	/*
@@ -766,9 +773,9 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 		head++;
 	}
 	*/
-
 	__nvme_submit_cmd(nvmeq, &cmnd);
 	nvme_process_cq(nvmeq);
+skip:
 	spin_unlock_irq(&nvmeq->q_lock);
 
 	//bestjae 
