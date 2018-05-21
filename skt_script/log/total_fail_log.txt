@@ -1,0 +1,98 @@
+/root/script_test/script/log/smart_log/smart_log_test.log:306:available_spare (0 / 100 : fail)
+/root/script_test/script/log/smart_log/smart_log_test.log:307:available_spare_threshold (0 / 10 : fail)
+/root/script_test/script/log/dsm/dsm_test_04.log:49:/dev/nvme0 DSM test fail
+/root/script_test/script/log/dsm/dsm_test_02.log:48:/dev/nvme0 DSM test fail
+/root/script_test/script/log/dsm/dsm_test_05.log:54:/dev/nvme0n1 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:73:/dev/nvme0n2 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:92:/dev/nvme0n3 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:111:/dev/nvme0n4 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:130:/dev/nvme0n5 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:149:/dev/nvme0n6 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:168:/dev/nvme0n7 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_05.log:187:/dev/nvme0n8 out of range write commad fail -> test success
+/root/script_test/script/log/dsm/dsm_test_03.log:32:/dev/nvme0 DSM test fail
+/root/script_test/script/log/dsm/dsm_test_01.log:31:/dev/nvme0 DSM test fail
+/root/script_test/script/log/firmware/action1.log:32:Firmware update fail
+/root/script_test/script/log/firmware/action1.log:55:Firmware update fail
+/root/script_test/script/log/firmware/action1.log:99:Firmware update fail
+/root/script_test/script/log/firmware/action1.log:122:Firmware update fail
+/root/script_test/script/log/firmware/action1.log:148:Rescan retry fail
+/root/script_test/script/log/firmware/action1.log:168:Rescan retry fail
+/root/script_test/script/log/firmware/action1.log:176:create-ns command fail
+/root/script_test/script/log/firmware/action1.log:183:attach-ns commnad fail
+/root/script_test/script/log/firmware/action1.log:193:create-ns command fail
+/root/script_test/script/log/firmware/action1.log:204:attach-ns commnad fail
+/root/script_test/script/log/firmware/slot_test.log:12:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/slot_test.log:20:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:23:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:26:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:29:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:32:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:35:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:38:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:41:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:44:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:47:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:52:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:55:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:58:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:61:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:64:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:67:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:70:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:73:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:76:fw-activate : fail
+/root/script_test/script/log/firmware/slot_test.log:79:fw-activate : fail
+/root/script_test/script/log/firmware/power_cycle_test.log:13:Rescan retry fail
+/root/script_test/script/log/firmware/power_cycle_test.log:87:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:91:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:95:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:99:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:103:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:107:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:119:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:123:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:127:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:131:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:135:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:139:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:151:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:155:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:159:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:163:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:167:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:171:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:183:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:187:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:191:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:195:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:199:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/firmware/power_cycle_test.log:203:/dev/nvme0 fw-activate command fail
+/root/script_test/script/log/namespace_io/nsio_test_12.log:37:/dev/nvme0n1 -> Flush: fail, /dev/nvme0n1
+/root/script_test/script/log/namespace_io/nsio_test_12.log:38:/dev/nvme0n2 -> Flush: fail, /dev/nvme0n2
+/root/script_test/script/log/namespace_io/nsio_test_12.log:39:/dev/nvme0n3 -> Flush: fail, /dev/nvme0n3
+/root/script_test/script/log/namespace_io/nsio_test_12.log:40:/dev/nvme0n4 -> Flush: fail, /dev/nvme0n4
+/root/script_test/script/log/namespace_io/nsio_test_12.log:41:/dev/nvme0n5 -> Flush: fail, /dev/nvme0n5
+/root/script_test/script/log/namespace_io/nsio_test_12.log:42:/dev/nvme0n6 -> Flush: fail, /dev/nvme0n6
+/root/script_test/script/log/namespace_io/nsio_test_12.log:43:/dev/nvme0n7 -> Flush: fail, /dev/nvme0n7
+/root/script_test/script/log/namespace_io/nsio_test_12.log:44:/dev/nvme0n8 -> Flush: fail, /dev/nvme0n8
+/root/script_test/script/log/namespace_io/nsio_test_08.log:42:/dev/nvme0n4 -> Flush: fail, /dev/nvme0n4
+/root/script_test/script/log/namespace_io/nsio_test_05.log:35:/dev/nvme0n1 -> Flush: fail, /dev/nvme0n1
+/root/script_test/script/log/namespace_io/nsio_test_05.log:36:/dev/nvme0n2 -> Flush: fail, /dev/nvme0n2
+/root/script_test/script/log/namespace_io/nsio_test_05.log:37:/dev/nvme0n3 -> Flush: fail, /dev/nvme0n3
+/root/script_test/script/log/namespace_io/nsio_test_05.log:38:/dev/nvme0n4 -> Flush: fail, /dev/nvme0n4
+/root/script_test/script/log/namespace_io/nsio_test_22.log:40:Flush: fail, /dev/nvme0n1
+/root/script_test/script/log/namespace_io/nsio_test_22.log:50:Flush: fail, /dev/nvme0n2
+/root/script_test/script/log/namespace_io/nsio_test_22.log:60:Flush: fail, /dev/nvme0n3
+/root/script_test/script/log/namespace_io/nsio_test_22.log:70:Flush: fail, /dev/nvme0n4
+/root/script_test/script/log/namespace_io/nsio_test_22.log:80:Flush: fail, /dev/nvme0n5
+/root/script_test/script/log/namespace_io/nsio_test_22.log:90:Flush: fail, /dev/nvme0n6
+/root/script_test/script/log/namespace_io/nsio_test_22.log:100:Flush: fail, /dev/nvme0n7
+/root/script_test/script/log/namespace_io/nsio_test_22.log:110:Flush: fail, /dev/nvme0n8
+/root/script_test/script/log/namespace_io/nsio_test_01.log:121:Rescan retry fail
+/root/script_test/script/log/namespace_io/nsio_test_01.log:161:Rescan retry fail
+/root/script_test/script/log/namespace_io/nsio_test_01.log:201:Rescan retry fail
+/root/script_test/script/log/namespace_io/nsio_test_06.log:37:/dev/nvme0n1 -> Flush: fail, /dev/nvme0n1
+/root/script_test/script/log/namespace_io/nsio_test_06.log:38:/dev/nvme0n2 -> Flush: fail, /dev/nvme0n2
+/root/script_test/script/log/namespace_io/nsio_test_06.log:39:/dev/nvme0n3 -> Flush: fail, /dev/nvme0n3
+/root/script_test/script/log/namespace_io/nsio_test_23.log:9:delete-ns command fail

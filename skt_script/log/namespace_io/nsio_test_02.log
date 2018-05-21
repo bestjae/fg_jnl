@@ -1,0 +1,129 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for testdelete-ns: Success, deleted nsid:1
+.delete-ns: Success, deleted nsid:2
+.delete-ns: Success, deleted nsid:3
+.delete-ns: Success, deleted nsid:4
+.delete-ns: Success, deleted nsid:5
+.delete-ns: Success, deleted nsid:6
+.delete-ns: Success, deleted nsid:7
+.delete-ns: Success, deleted nsid:8
+.
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+Rescan retry success
+
+
+<Test scenario : (/dev/nvme0n1~nvme0n4 : smart-log), (/dev/nvme0n5~nvme0n8 : read/write)>
+Test scenario progress : 1/1
+smart_log -> /dev/nvme0n1,2,3,4
+/dev/nvme0n5 -> read: Success
+/dev/nvme0n6 -> write: Success
+/dev/nvme0n7 -> read: Success
+/dev/nvme0n8 -> write: Success
+
+
+<Device fault verify>
+Rescan retry success
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+<Test Environment Check>
+/dev/nvme1 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+rmmod: ERROR: Module nvme is in use
+/dev/nvme1 rescan start
+/dev/nvme1n1 Rescan retry success
+/dev/nvme1n1 rescan start
+/dev/nvme1n2 Rescan retry success
+/dev/nvme1n2 rescan start
+/dev/nvme1n3 Rescan retry success
+/dev/nvme1n3 rescan start
+/dev/nvme1n4 Rescan retry success
+/dev/nvme1n4 rescan start
+/dev/nvme1n5 Rescan retry success
+/dev/nvme1n5 rescan start
+/dev/nvme1n6 Rescan retry success
+/dev/nvme1n6 rescan start
+/dev/nvme1n7 Rescan retry success
+/dev/nvme1n7 rescan start
+/dev/nvme1n8 Rescan retry success
+/n
+
+<Test scenario : (/dev/nvme0n1~nvme0n4 : smart-log), (/dev/nvme0n5~nvme0n8 : read/write)>
+Test scenario progress : 1/1
+smart_log -> /dev/nvme0n1,2,3,4
+/dev/nvme0n5 -> read: Success
+/dev/nvme0n6 -> write: Success
+/dev/nvme0n7 -> read: Success
+/dev/nvme0n8 -> write: Success
+
+
+<Device fault verify>
+rmmod: ERROR: Module nvme is in use
+/dev/nvme1 rescan start
+/dev/nvme1n1 Rescan retry success
+/dev/nvme1n1 rescan start
+/dev/nvme1n2 Rescan retry success
+/dev/nvme1n2 rescan start
+/dev/nvme1n3 Rescan retry success
+/dev/nvme1n3 rescan start
+/dev/nvme1n4 Rescan retry success
+/dev/nvme1n4 rescan start
+/dev/nvme1n5 Rescan retry success
+/dev/nvme1n5 rescan start
+/dev/nvme1n6 Rescan retry success
+/dev/nvme1n6 rescan start
+/dev/nvme1n7 Rescan retry success
+/dev/nvme1n7 rescan start
+/dev/nvme1n8 Rescan retry success
+/nNVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

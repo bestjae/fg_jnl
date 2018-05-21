@@ -1,0 +1,1413 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test........
+
+<Test scenario : smart-log value test with I/O>
+Test scenario progress : 1/1
+Namespace = 1 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (102 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2232 / 2240 : success)
+host_write_commands (24 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 2 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 3 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 4 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 5 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 6 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 7 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 8 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Global Namespace smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (103 / 103 : success)
+data_units_written (2 / 2 : success)
+host_read_commands (2240 / 2240 : success)
+host_write_commands (32 / 32 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (52 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Start I/O on namespace 1
+Start I/O on namespace 2
+Start I/O on namespace 3
+Start I/O on namespace 4
+Start I/O on namespace 5
+Start I/O on namespace 6
+Start I/O on namespace 7
+Start I/O on namespace 8
+
+
+
+
+<Device fault verify>
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+
+
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+/n<Test scenario : smart-log value test with I/O>
+Test scenario progress : 1/1
+Namespace = 1 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212425 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693143 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (9 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 2 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 3 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 4 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 5 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 6 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 7 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 8 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Global Namespace smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212433 / 3212433 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515693639 / 2515693639 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (11 / 11 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (38 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Start I/O on namespace 1
+write /dev/nvme0n1 0 512
+read /dev/nvme0n1 0 512
+write /dev/nvme0n1 1 512
+read /dev/nvme0n1 1 512
+write /dev/nvme0n1 2 512
+read /dev/nvme0n1 2 512
+write /dev/nvme0n1 3 512
+read /dev/nvme0n1 3 512
+write /dev/nvme0n1 4 512
+read /dev/nvme0n1 4 512
+write /dev/nvme0n1 5 512
+read /dev/nvme0n1 5 512
+write /dev/nvme0n1 6 512
+read /dev/nvme0n1 6 512
+write /dev/nvme0n1 7 512
+read /dev/nvme0n1 7 512
+write /dev/nvme0n1 8 512
+read /dev/nvme0n1 8 512
+write /dev/nvme0n1 9 512
+read /dev/nvme0n1 9 512
+write /dev/nvme0n1 10 512
+read /dev/nvme0n1 10 512
+write /dev/nvme0n1 11 512
+read /dev/nvme0n1 11 512
+write /dev/nvme0n1 12 512
+read /dev/nvme0n1 12 512
+write /dev/nvme0n1 13 512
+read /dev/nvme0n1 13 512
+write /dev/nvme0n1 14 512
+read /dev/nvme0n1 14 512
+write /dev/nvme0n1 15 512
+read /dev/nvme0n1 15 512
+write /dev/nvme0n1 16 512
+read /dev/nvme0n1 16 512
+write /dev/nvme0n1 17 512
+read /dev/nvme0n1 17 512
+write /dev/nvme0n1 18 512
+read /dev/nvme0n1 18 512
+write /dev/nvme0n1 19 512
+read /dev/nvme0n1 19 512
+write /dev/nvme0n1 20 512
+read /dev/nvme0n1 20 512
+write /dev/nvme0n1 21 512
+read /dev/nvme0n1 21 512
+write /dev/nvme0n1 22 512
+read /dev/nvme0n1 22 512
+write /dev/nvme0n1 23 512
+read /dev/nvme0n1 23 512
+write /dev/nvme0n1 24 512
+read /dev/nvme0n1 24 512
+write /dev/nvme0n1 25 512
+read /dev/nvme0n1 25 512
+write /dev/nvme0n1 26 512
+read /dev/nvme0n1 26 512
+write /dev/nvme0n1 27 512
+read /dev/nvme0n1 27 512
+write /dev/nvme0n1 28 512
+read /dev/nvme0n1 28 512
+write /dev/nvme0n1 29 512
+read /dev/nvme0n1 29 512
+write /dev/nvme0n1 30 512
+read /dev/nvme0n1 30 512
+write /dev/nvme0n1 31 512
+read /dev/nvme0n1 31 512
+write /dev/nvme0n1 32 512
+read /dev/nvme0n1 32 512
+write /dev/nvme0n1 33 512
+read /dev/nvme0n1 33 512
+write /dev/nvme0n1 34 512
+read /dev/nvme0n1 34 512
+write /dev/nvme0n1 35 512
+read /dev/nvme0n1 35 512
+write /dev/nvme0n1 36 512
+read /dev/nvme0n1 36 512
+write /dev/nvme0n1 37 512
+read /dev/nvme0n1 37 512
+write /dev/nvme0n1 38 512
+read /dev/nvme0n1 38 512
+write /dev/nvme0n1 39 512
+read /dev/nvme0n1 39 512
+write /dev/nvme0n1 40 512
+read /dev/nvme0n1 40 512
+write /dev/nvme0n1 41 512
+read /dev/nvme0n1 41 512
+write /dev/nvme0n1 42 512
+read /dev/nvme0n1 42 512
+write /dev/nvme0n1 43 512
+read /dev/nvme0n1 43 512
+write /dev/nvme0n1 44 512
+read /dev/nvme0n1 44 512
+write /dev/nvme0n1 45 512
+read /dev/nvme0n1 45 512
+write /dev/nvme0n1 46 512
+read /dev/nvme0n1 46 512
+write /dev/nvme0n1 47 512
+read /dev/nvme0n1 47 512
+write /dev/nvme0n1 48 512
+read /dev/nvme0n1 48 512
+write /dev/nvme0n1 49 512
+read /dev/nvme0n1 49 512
+End I/O on namespace 1
+Start I/O on namespace 2
+write /dev/nvme0n2 0 512
+read /dev/nvme0n2 0 512
+write /dev/nvme0n2 1 512
+read /dev/nvme0n2 1 512
+write /dev/nvme0n2 2 512
+read /dev/nvme0n2 2 512
+write /dev/nvme0n2 3 512
+read /dev/nvme0n2 3 512
+write /dev/nvme0n2 4 512
+read /dev/nvme0n2 4 512
+write /dev/nvme0n2 5 512
+read /dev/nvme0n2 5 512
+write /dev/nvme0n2 6 512
+read /dev/nvme0n2 6 512
+write /dev/nvme0n2 7 512
+read /dev/nvme0n2 7 512
+write /dev/nvme0n2 8 512
+read /dev/nvme0n2 8 512
+write /dev/nvme0n2 9 512
+read /dev/nvme0n2 9 512
+write /dev/nvme0n2 10 512
+read /dev/nvme0n2 10 512
+write /dev/nvme0n2 11 512
+read /dev/nvme0n2 11 512
+write /dev/nvme0n2 12 512
+read /dev/nvme0n2 12 512
+write /dev/nvme0n2 13 512
+read /dev/nvme0n2 13 512
+write /dev/nvme0n2 14 512
+read /dev/nvme0n2 14 512
+write /dev/nvme0n2 15 512
+read /dev/nvme0n2 15 512
+write /dev/nvme0n2 16 512
+read /dev/nvme0n2 16 512
+write /dev/nvme0n2 17 512
+read /dev/nvme0n2 17 512
+write /dev/nvme0n2 18 512
+read /dev/nvme0n2 18 512
+write /dev/nvme0n2 19 512
+read /dev/nvme0n2 19 512
+write /dev/nvme0n2 20 512
+read /dev/nvme0n2 20 512
+write /dev/nvme0n2 21 512
+read /dev/nvme0n2 21 512
+write /dev/nvme0n2 22 512
+read /dev/nvme0n2 22 512
+write /dev/nvme0n2 23 512
+read /dev/nvme0n2 23 512
+write /dev/nvme0n2 24 512
+read /dev/nvme0n2 24 512
+write /dev/nvme0n2 25 512
+read /dev/nvme0n2 25 512
+write /dev/nvme0n2 26 512
+read /dev/nvme0n2 26 512
+write /dev/nvme0n2 27 512
+read /dev/nvme0n2 27 512
+write /dev/nvme0n2 28 512
+read /dev/nvme0n2 28 512
+write /dev/nvme0n2 29 512
+read /dev/nvme0n2 29 512
+write /dev/nvme0n2 30 512
+read /dev/nvme0n2 30 512
+write /dev/nvme0n2 31 512
+read /dev/nvme0n2 31 512
+write /dev/nvme0n2 32 512
+read /dev/nvme0n2 32 512
+write /dev/nvme0n2 33 512
+read /dev/nvme0n2 33 512
+write /dev/nvme0n2 34 512
+read /dev/nvme0n2 34 512
+write /dev/nvme0n2 35 512
+read /dev/nvme0n2 35 512
+write /dev/nvme0n2 36 512
+read /dev/nvme0n2 36 512
+write /dev/nvme0n2 37 512
+read /dev/nvme0n2 37 512
+write /dev/nvme0n2 38 512
+read /dev/nvme0n2 38 512
+write /dev/nvme0n2 39 512
+read /dev/nvme0n2 39 512
+write /dev/nvme0n2 40 512
+read /dev/nvme0n2 40 512
+write /dev/nvme0n2 41 512
+read /dev/nvme0n2 41 512
+write /dev/nvme0n2 42 512
+read /dev/nvme0n2 42 512
+write /dev/nvme0n2 43 512
+read /dev/nvme0n2 43 512
+write /dev/nvme0n2 44 512
+read /dev/nvme0n2 44 512
+write /dev/nvme0n2 45 512
+read /dev/nvme0n2 45 512
+write /dev/nvme0n2 46 512
+read /dev/nvme0n2 46 512
+write /dev/nvme0n2 47 512
+read /dev/nvme0n2 47 512
+write /dev/nvme0n2 48 512
+read /dev/nvme0n2 48 512
+write /dev/nvme0n2 49 512
+read /dev/nvme0n2 49 512
+End I/O on namespace 2
+Start I/O on namespace 3
+write /dev/nvme0n3 0 512
+read /dev/nvme0n3 0 512
+write /dev/nvme0n3 1 512
+read /dev/nvme0n3 1 512
+write /dev/nvme0n3 2 512
+read /dev/nvme0n3 2 512
+write /dev/nvme0n3 3 512
+read /dev/nvme0n3 3 512
+write /dev/nvme0n3 4 512
+read /dev/nvme0n3 4 512
+write /dev/nvme0n3 5 512
+read /dev/nvme0n3 5 512
+write /dev/nvme0n3 6 512
+read /dev/nvme0n3 6 512
+write /dev/nvme0n3 7 512
+read /dev/nvme0n3 7 512
+write /dev/nvme0n3 8 512
+read /dev/nvme0n3 8 512
+write /dev/nvme0n3 9 512
+read /dev/nvme0n3 9 512
+write /dev/nvme0n3 10 512
+read /dev/nvme0n3 10 512
+write /dev/nvme0n3 11 512
+read /dev/nvme0n3 11 512
+write /dev/nvme0n3 12 512
+read /dev/nvme0n3 12 512
+write /dev/nvme0n3 13 512
+read /dev/nvme0n3 13 512
+write /dev/nvme0n3 14 512
+read /dev/nvme0n3 14 512
+write /dev/nvme0n3 15 512
+read /dev/nvme0n3 15 512
+write /dev/nvme0n3 16 512
+read /dev/nvme0n3 16 512
+write /dev/nvme0n3 17 512
+read /dev/nvme0n3 17 512
+write /dev/nvme0n3 18 512
+read /dev/nvme0n3 18 512
+write /dev/nvme0n3 19 512
+read /dev/nvme0n3 19 512
+write /dev/nvme0n3 20 512
+read /dev/nvme0n3 20 512
+write /dev/nvme0n3 21 512
+read /dev/nvme0n3 21 512
+write /dev/nvme0n3 22 512
+read /dev/nvme0n3 22 512
+write /dev/nvme0n3 23 512
+read /dev/nvme0n3 23 512
+write /dev/nvme0n3 24 512
+read /dev/nvme0n3 24 512
+write /dev/nvme0n3 25 512
+read /dev/nvme0n3 25 512
+write /dev/nvme0n3 26 512
+read /dev/nvme0n3 26 512
+write /dev/nvme0n3 27 512
+read /dev/nvme0n3 27 512
+write /dev/nvme0n3 28 512
+read /dev/nvme0n3 28 512
+write /dev/nvme0n3 29 512
+read /dev/nvme0n3 29 512
+write /dev/nvme0n3 30 512
+read /dev/nvme0n3 30 512
+write /dev/nvme0n3 31 512
+read /dev/nvme0n3 31 512
+write /dev/nvme0n3 32 512
+read /dev/nvme0n3 32 512
+write /dev/nvme0n3 33 512
+read /dev/nvme0n3 33 512
+write /dev/nvme0n3 34 512
+read /dev/nvme0n3 34 512
+write /dev/nvme0n3 35 512
+read /dev/nvme0n3 35 512
+write /dev/nvme0n3 36 512
+read /dev/nvme0n3 36 512
+write /dev/nvme0n3 37 512
+read /dev/nvme0n3 37 512
+write /dev/nvme0n3 38 512
+read /dev/nvme0n3 38 512
+write /dev/nvme0n3 39 512
+read /dev/nvme0n3 39 512
+write /dev/nvme0n3 40 512
+read /dev/nvme0n3 40 512
+write /dev/nvme0n3 41 512
+read /dev/nvme0n3 41 512
+write /dev/nvme0n3 42 512
+read /dev/nvme0n3 42 512
+write /dev/nvme0n3 43 512
+read /dev/nvme0n3 43 512
+write /dev/nvme0n3 44 512
+read /dev/nvme0n3 44 512
+write /dev/nvme0n3 45 512
+read /dev/nvme0n3 45 512
+write /dev/nvme0n3 46 512
+read /dev/nvme0n3 46 512
+write /dev/nvme0n3 47 512
+read /dev/nvme0n3 47 512
+write /dev/nvme0n3 48 512
+read /dev/nvme0n3 48 512
+write /dev/nvme0n3 49 512
+read /dev/nvme0n3 49 512
+End I/O on namespace 3
+Start I/O on namespace 4
+write /dev/nvme0n4 0 512
+read /dev/nvme0n4 0 512
+write /dev/nvme0n4 1 512
+read /dev/nvme0n4 1 512
+write /dev/nvme0n4 2 512
+read /dev/nvme0n4 2 512
+write /dev/nvme0n4 3 512
+read /dev/nvme0n4 3 512
+write /dev/nvme0n4 4 512
+read /dev/nvme0n4 4 512
+write /dev/nvme0n4 5 512
+read /dev/nvme0n4 5 512
+write /dev/nvme0n4 6 512
+read /dev/nvme0n4 6 512
+write /dev/nvme0n4 7 512
+read /dev/nvme0n4 7 512
+write /dev/nvme0n4 8 512
+read /dev/nvme0n4 8 512
+write /dev/nvme0n4 9 512
+read /dev/nvme0n4 9 512
+write /dev/nvme0n4 10 512
+read /dev/nvme0n4 10 512
+write /dev/nvme0n4 11 512
+read /dev/nvme0n4 11 512
+write /dev/nvme0n4 12 512
+read /dev/nvme0n4 12 512
+write /dev/nvme0n4 13 512
+read /dev/nvme0n4 13 512
+write /dev/nvme0n4 14 512
+read /dev/nvme0n4 14 512
+write /dev/nvme0n4 15 512
+read /dev/nvme0n4 15 512
+write /dev/nvme0n4 16 512
+read /dev/nvme0n4 16 512
+write /dev/nvme0n4 17 512
+read /dev/nvme0n4 17 512
+write /dev/nvme0n4 18 512
+read /dev/nvme0n4 18 512
+write /dev/nvme0n4 19 512
+read /dev/nvme0n4 19 512
+write /dev/nvme0n4 20 512
+read /dev/nvme0n4 20 512
+write /dev/nvme0n4 21 512
+read /dev/nvme0n4 21 512
+write /dev/nvme0n4 22 512
+read /dev/nvme0n4 22 512
+write /dev/nvme0n4 23 512
+read /dev/nvme0n4 23 512
+write /dev/nvme0n4 24 512
+read /dev/nvme0n4 24 512
+write /dev/nvme0n4 25 512
+read /dev/nvme0n4 25 512
+write /dev/nvme0n4 26 512
+read /dev/nvme0n4 26 512
+write /dev/nvme0n4 27 512
+read /dev/nvme0n4 27 512
+write /dev/nvme0n4 28 512
+read /dev/nvme0n4 28 512
+write /dev/nvme0n4 29 512
+read /dev/nvme0n4 29 512
+write /dev/nvme0n4 30 512
+read /dev/nvme0n4 30 512
+write /dev/nvme0n4 31 512
+read /dev/nvme0n4 31 512
+write /dev/nvme0n4 32 512
+read /dev/nvme0n4 32 512
+write /dev/nvme0n4 33 512
+read /dev/nvme0n4 33 512
+write /dev/nvme0n4 34 512
+read /dev/nvme0n4 34 512
+write /dev/nvme0n4 35 512
+read /dev/nvme0n4 35 512
+write /dev/nvme0n4 36 512
+read /dev/nvme0n4 36 512
+write /dev/nvme0n4 37 512
+read /dev/nvme0n4 37 512
+write /dev/nvme0n4 38 512
+read /dev/nvme0n4 38 512
+write /dev/nvme0n4 39 512
+read /dev/nvme0n4 39 512
+write /dev/nvme0n4 40 512
+read /dev/nvme0n4 40 512
+write /dev/nvme0n4 41 512
+read /dev/nvme0n4 41 512
+write /dev/nvme0n4 42 512
+read /dev/nvme0n4 42 512
+write /dev/nvme0n4 43 512
+read /dev/nvme0n4 43 512
+write /dev/nvme0n4 44 512
+read /dev/nvme0n4 44 512
+write /dev/nvme0n4 45 512
+read /dev/nvme0n4 45 512
+write /dev/nvme0n4 46 512
+read /dev/nvme0n4 46 512
+write /dev/nvme0n4 47 512
+read /dev/nvme0n4 47 512
+write /dev/nvme0n4 48 512
+read /dev/nvme0n4 48 512
+write /dev/nvme0n4 49 512
+read /dev/nvme0n4 49 512
+End I/O on namespace 4
+Start I/O on namespace 5
+write /dev/nvme0n5 0 512
+read /dev/nvme0n5 0 512
+write /dev/nvme0n5 1 512
+read /dev/nvme0n5 1 512
+write /dev/nvme0n5 2 512
+read /dev/nvme0n5 2 512
+write /dev/nvme0n5 3 512
+read /dev/nvme0n5 3 512
+write /dev/nvme0n5 4 512
+read /dev/nvme0n5 4 512
+write /dev/nvme0n5 5 512
+read /dev/nvme0n5 5 512
+write /dev/nvme0n5 6 512
+read /dev/nvme0n5 6 512
+write /dev/nvme0n5 7 512
+read /dev/nvme0n5 7 512
+write /dev/nvme0n5 8 512
+read /dev/nvme0n5 8 512
+write /dev/nvme0n5 9 512
+read /dev/nvme0n5 9 512
+write /dev/nvme0n5 10 512
+read /dev/nvme0n5 10 512
+write /dev/nvme0n5 11 512
+read /dev/nvme0n5 11 512
+write /dev/nvme0n5 12 512
+read /dev/nvme0n5 12 512
+write /dev/nvme0n5 13 512
+read /dev/nvme0n5 13 512
+write /dev/nvme0n5 14 512
+read /dev/nvme0n5 14 512
+write /dev/nvme0n5 15 512
+read /dev/nvme0n5 15 512
+write /dev/nvme0n5 16 512
+read /dev/nvme0n5 16 512
+write /dev/nvme0n5 17 512
+read /dev/nvme0n5 17 512
+write /dev/nvme0n5 18 512
+read /dev/nvme0n5 18 512
+write /dev/nvme0n5 19 512
+read /dev/nvme0n5 19 512
+write /dev/nvme0n5 20 512
+read /dev/nvme0n5 20 512
+write /dev/nvme0n5 21 512
+read /dev/nvme0n5 21 512
+write /dev/nvme0n5 22 512
+read /dev/nvme0n5 22 512
+write /dev/nvme0n5 23 512
+read /dev/nvme0n5 23 512
+write /dev/nvme0n5 24 512
+read /dev/nvme0n5 24 512
+write /dev/nvme0n5 25 512
+read /dev/nvme0n5 25 512
+write /dev/nvme0n5 26 512
+read /dev/nvme0n5 26 512
+write /dev/nvme0n5 27 512
+read /dev/nvme0n5 27 512
+write /dev/nvme0n5 28 512
+read /dev/nvme0n5 28 512
+write /dev/nvme0n5 29 512
+read /dev/nvme0n5 29 512
+write /dev/nvme0n5 30 512
+read /dev/nvme0n5 30 512
+write /dev/nvme0n5 31 512
+read /dev/nvme0n5 31 512
+write /dev/nvme0n5 32 512
+read /dev/nvme0n5 32 512
+write /dev/nvme0n5 33 512
+read /dev/nvme0n5 33 512
+write /dev/nvme0n5 34 512
+read /dev/nvme0n5 34 512
+write /dev/nvme0n5 35 512
+read /dev/nvme0n5 35 512
+write /dev/nvme0n5 36 512
+read /dev/nvme0n5 36 512
+write /dev/nvme0n5 37 512
+read /dev/nvme0n5 37 512
+write /dev/nvme0n5 38 512
+read /dev/nvme0n5 38 512
+write /dev/nvme0n5 39 512
+read /dev/nvme0n5 39 512
+write /dev/nvme0n5 40 512
+read /dev/nvme0n5 40 512
+write /dev/nvme0n5 41 512
+read /dev/nvme0n5 41 512
+write /dev/nvme0n5 42 512
+read /dev/nvme0n5 42 512
+write /dev/nvme0n5 43 512
+read /dev/nvme0n5 43 512
+write /dev/nvme0n5 44 512
+read /dev/nvme0n5 44 512
+write /dev/nvme0n5 45 512
+read /dev/nvme0n5 45 512
+write /dev/nvme0n5 46 512
+read /dev/nvme0n5 46 512
+write /dev/nvme0n5 47 512
+read /dev/nvme0n5 47 512
+write /dev/nvme0n5 48 512
+read /dev/nvme0n5 48 512
+write /dev/nvme0n5 49 512
+read /dev/nvme0n5 49 512
+End I/O on namespace 5
+Start I/O on namespace 6
+write /dev/nvme0n6 0 512
+read /dev/nvme0n6 0 512
+write /dev/nvme0n6 1 512
+read /dev/nvme0n6 1 512
+write /dev/nvme0n6 2 512
+read /dev/nvme0n6 2 512
+write /dev/nvme0n6 3 512
+read /dev/nvme0n6 3 512
+write /dev/nvme0n6 4 512
+read /dev/nvme0n6 4 512
+write /dev/nvme0n6 5 512
+read /dev/nvme0n6 5 512
+write /dev/nvme0n6 6 512
+read /dev/nvme0n6 6 512
+write /dev/nvme0n6 7 512
+read /dev/nvme0n6 7 512
+write /dev/nvme0n6 8 512
+read /dev/nvme0n6 8 512
+write /dev/nvme0n6 9 512
+read /dev/nvme0n6 9 512
+write /dev/nvme0n6 10 512
+read /dev/nvme0n6 10 512
+write /dev/nvme0n6 11 512
+read /dev/nvme0n6 11 512
+write /dev/nvme0n6 12 512
+read /dev/nvme0n6 12 512
+write /dev/nvme0n6 13 512
+read /dev/nvme0n6 13 512
+write /dev/nvme0n6 14 512
+read /dev/nvme0n6 14 512
+write /dev/nvme0n6 15 512
+read /dev/nvme0n6 15 512
+write /dev/nvme0n6 16 512
+read /dev/nvme0n6 16 512
+write /dev/nvme0n6 17 512
+read /dev/nvme0n6 17 512
+write /dev/nvme0n6 18 512
+read /dev/nvme0n6 18 512
+write /dev/nvme0n6 19 512
+read /dev/nvme0n6 19 512
+write /dev/nvme0n6 20 512
+read /dev/nvme0n6 20 512
+write /dev/nvme0n6 21 512
+read /dev/nvme0n6 21 512
+write /dev/nvme0n6 22 512
+read /dev/nvme0n6 22 512
+write /dev/nvme0n6 23 512
+read /dev/nvme0n6 23 512
+write /dev/nvme0n6 24 512
+read /dev/nvme0n6 24 512
+write /dev/nvme0n6 25 512
+read /dev/nvme0n6 25 512
+write /dev/nvme0n6 26 512
+read /dev/nvme0n6 26 512
+write /dev/nvme0n6 27 512
+read /dev/nvme0n6 27 512
+write /dev/nvme0n6 28 512
+read /dev/nvme0n6 28 512
+write /dev/nvme0n6 29 512
+read /dev/nvme0n6 29 512
+write /dev/nvme0n6 30 512
+read /dev/nvme0n6 30 512
+write /dev/nvme0n6 31 512
+read /dev/nvme0n6 31 512
+write /dev/nvme0n6 32 512
+read /dev/nvme0n6 32 512
+write /dev/nvme0n6 33 512
+read /dev/nvme0n6 33 512
+write /dev/nvme0n6 34 512
+read /dev/nvme0n6 34 512
+write /dev/nvme0n6 35 512
+read /dev/nvme0n6 35 512
+write /dev/nvme0n6 36 512
+read /dev/nvme0n6 36 512
+write /dev/nvme0n6 37 512
+read /dev/nvme0n6 37 512
+write /dev/nvme0n6 38 512
+read /dev/nvme0n6 38 512
+write /dev/nvme0n6 39 512
+read /dev/nvme0n6 39 512
+write /dev/nvme0n6 40 512
+read /dev/nvme0n6 40 512
+write /dev/nvme0n6 41 512
+read /dev/nvme0n6 41 512
+write /dev/nvme0n6 42 512
+read /dev/nvme0n6 42 512
+write /dev/nvme0n6 43 512
+read /dev/nvme0n6 43 512
+write /dev/nvme0n6 44 512
+read /dev/nvme0n6 44 512
+write /dev/nvme0n6 45 512
+read /dev/nvme0n6 45 512
+write /dev/nvme0n6 46 512
+read /dev/nvme0n6 46 512
+write /dev/nvme0n6 47 512
+read /dev/nvme0n6 47 512
+write /dev/nvme0n6 48 512
+read /dev/nvme0n6 48 512
+write /dev/nvme0n6 49 512
+read /dev/nvme0n6 49 512
+End I/O on namespace 6
+Start I/O on namespace 7
+write /dev/nvme0n7 0 512
+read /dev/nvme0n7 0 512
+write /dev/nvme0n7 1 512
+read /dev/nvme0n7 1 512
+write /dev/nvme0n7 2 512
+read /dev/nvme0n7 2 512
+write /dev/nvme0n7 3 512
+read /dev/nvme0n7 3 512
+write /dev/nvme0n7 4 512
+read /dev/nvme0n7 4 512
+write /dev/nvme0n7 5 512
+read /dev/nvme0n7 5 512
+write /dev/nvme0n7 6 512
+read /dev/nvme0n7 6 512
+write /dev/nvme0n7 7 512
+read /dev/nvme0n7 7 512
+write /dev/nvme0n7 8 512
+read /dev/nvme0n7 8 512
+write /dev/nvme0n7 9 512
+read /dev/nvme0n7 9 512
+write /dev/nvme0n7 10 512
+read /dev/nvme0n7 10 512
+write /dev/nvme0n7 11 512
+read /dev/nvme0n7 11 512
+write /dev/nvme0n7 12 512
+read /dev/nvme0n7 12 512
+write /dev/nvme0n7 13 512
+read /dev/nvme0n7 13 512
+write /dev/nvme0n7 14 512
+read /dev/nvme0n7 14 512
+write /dev/nvme0n7 15 512
+read /dev/nvme0n7 15 512
+write /dev/nvme0n7 16 512
+read /dev/nvme0n7 16 512
+write /dev/nvme0n7 17 512
+read /dev/nvme0n7 17 512
+write /dev/nvme0n7 18 512
+read /dev/nvme0n7 18 512
+write /dev/nvme0n7 19 512
+read /dev/nvme0n7 19 512
+write /dev/nvme0n7 20 512
+read /dev/nvme0n7 20 512
+write /dev/nvme0n7 21 512
+read /dev/nvme0n7 21 512
+write /dev/nvme0n7 22 512
+read /dev/nvme0n7 22 512
+write /dev/nvme0n7 23 512
+read /dev/nvme0n7 23 512
+write /dev/nvme0n7 24 512
+read /dev/nvme0n7 24 512
+write /dev/nvme0n7 25 512
+read /dev/nvme0n7 25 512
+write /dev/nvme0n7 26 512
+read /dev/nvme0n7 26 512
+write /dev/nvme0n7 27 512
+read /dev/nvme0n7 27 512
+write /dev/nvme0n7 28 512
+read /dev/nvme0n7 28 512
+write /dev/nvme0n7 29 512
+read /dev/nvme0n7 29 512
+write /dev/nvme0n7 30 512
+read /dev/nvme0n7 30 512
+write /dev/nvme0n7 31 512
+read /dev/nvme0n7 31 512
+write /dev/nvme0n7 32 512
+read /dev/nvme0n7 32 512
+write /dev/nvme0n7 33 512
+read /dev/nvme0n7 33 512
+write /dev/nvme0n7 34 512
+read /dev/nvme0n7 34 512
+write /dev/nvme0n7 35 512
+read /dev/nvme0n7 35 512
+write /dev/nvme0n7 36 512
+read /dev/nvme0n7 36 512
+write /dev/nvme0n7 37 512
+read /dev/nvme0n7 37 512
+write /dev/nvme0n7 38 512
+read /dev/nvme0n7 38 512
+write /dev/nvme0n7 39 512
+read /dev/nvme0n7 39 512
+write /dev/nvme0n7 40 512
+read /dev/nvme0n7 40 512
+write /dev/nvme0n7 41 512
+read /dev/nvme0n7 41 512
+write /dev/nvme0n7 42 512
+read /dev/nvme0n7 42 512
+write /dev/nvme0n7 43 512
+read /dev/nvme0n7 43 512
+write /dev/nvme0n7 44 512
+read /dev/nvme0n7 44 512
+write /dev/nvme0n7 45 512
+read /dev/nvme0n7 45 512
+write /dev/nvme0n7 46 512
+read /dev/nvme0n7 46 512
+write /dev/nvme0n7 47 512
+read /dev/nvme0n7 47 512
+write /dev/nvme0n7 48 512
+read /dev/nvme0n7 48 512
+write /dev/nvme0n7 49 512
+read /dev/nvme0n7 49 512
+End I/O on namespace 7
+Start I/O on namespace 8
+write /dev/nvme0n8 0 512
+read /dev/nvme0n8 0 512
+write /dev/nvme0n8 1 512
+read /dev/nvme0n8 1 512
+write /dev/nvme0n8 2 512
+read /dev/nvme0n8 2 512
+write /dev/nvme0n8 3 512
+read /dev/nvme0n8 3 512
+write /dev/nvme0n8 4 512
+read /dev/nvme0n8 4 512
+write /dev/nvme0n8 5 512
+read /dev/nvme0n8 5 512
+write /dev/nvme0n8 6 512
+read /dev/nvme0n8 6 512
+write /dev/nvme0n8 7 512
+read /dev/nvme0n8 7 512
+write /dev/nvme0n8 8 512
+read /dev/nvme0n8 8 512
+write /dev/nvme0n8 9 512
+read /dev/nvme0n8 9 512
+write /dev/nvme0n8 10 512
+read /dev/nvme0n8 10 512
+write /dev/nvme0n8 11 512
+read /dev/nvme0n8 11 512
+write /dev/nvme0n8 12 512
+read /dev/nvme0n8 12 512
+write /dev/nvme0n8 13 512
+read /dev/nvme0n8 13 512
+write /dev/nvme0n8 14 512
+read /dev/nvme0n8 14 512
+write /dev/nvme0n8 15 512
+read /dev/nvme0n8 15 512
+write /dev/nvme0n8 16 512
+read /dev/nvme0n8 16 512
+write /dev/nvme0n8 17 512
+read /dev/nvme0n8 17 512
+write /dev/nvme0n8 18 512
+read /dev/nvme0n8 18 512
+write /dev/nvme0n8 19 512
+read /dev/nvme0n8 19 512
+write /dev/nvme0n8 20 512
+read /dev/nvme0n8 20 512
+write /dev/nvme0n8 21 512
+read /dev/nvme0n8 21 512
+write /dev/nvme0n8 22 512
+read /dev/nvme0n8 22 512
+write /dev/nvme0n8 23 512
+read /dev/nvme0n8 23 512
+write /dev/nvme0n8 24 512
+read /dev/nvme0n8 24 512
+write /dev/nvme0n8 25 512
+read /dev/nvme0n8 25 512
+write /dev/nvme0n8 26 512
+read /dev/nvme0n8 26 512
+write /dev/nvme0n8 27 512
+read /dev/nvme0n8 27 512
+write /dev/nvme0n8 28 512
+read /dev/nvme0n8 28 512
+write /dev/nvme0n8 29 512
+read /dev/nvme0n8 29 512
+write /dev/nvme0n8 30 512
+read /dev/nvme0n8 30 512
+write /dev/nvme0n8 31 512
+read /dev/nvme0n8 31 512
+write /dev/nvme0n8 32 512
+read /dev/nvme0n8 32 512
+write /dev/nvme0n8 33 512
+read /dev/nvme0n8 33 512
+write /dev/nvme0n8 34 512
+read /dev/nvme0n8 34 512
+write /dev/nvme0n8 35 512
+read /dev/nvme0n8 35 512
+write /dev/nvme0n8 36 512
+read /dev/nvme0n8 36 512
+write /dev/nvme0n8 37 512
+read /dev/nvme0n8 37 512
+write /dev/nvme0n8 38 512
+read /dev/nvme0n8 38 512
+write /dev/nvme0n8 39 512
+read /dev/nvme0n8 39 512
+write /dev/nvme0n8 40 512
+read /dev/nvme0n8 40 512
+write /dev/nvme0n8 41 512
+read /dev/nvme0n8 41 512
+write /dev/nvme0n8 42 512
+read /dev/nvme0n8 42 512
+write /dev/nvme0n8 43 512
+read /dev/nvme0n8 43 512
+write /dev/nvme0n8 44 512
+read /dev/nvme0n8 44 512
+write /dev/nvme0n8 45 512
+read /dev/nvme0n8 45 512
+write /dev/nvme0n8 46 512
+read /dev/nvme0n8 46 512
+write /dev/nvme0n8 47 512
+read /dev/nvme0n8 47 512
+write /dev/nvme0n8 48 512
+read /dev/nvme0n8 48 512
+write /dev/nvme0n8 49 512
+read /dev/nvme0n8 49 512
+End I/O on namespace 8
+
+
+
+
+<Device fault verify>
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+/nNVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

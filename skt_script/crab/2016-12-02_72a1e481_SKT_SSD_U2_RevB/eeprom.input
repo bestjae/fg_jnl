@@ -1,0 +1,70 @@
+#****************************************************************************
+#
+# Copyright (c) 2010 - 2015 PMC-Sierra, Inc.
+#     All Rights Reserved
+#
+# Distribution of source code or binaries derived from this file is not
+# permitted except as specifically allowed for in the PMC-Sierra
+# Software License agreement.  All copies of this source code
+# modified or unmodified must retain this entire copyright notice and
+# comment as is.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
+# IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+#
+# Description : EEPROM PBL commands.
+# $Revision: 24328 $
+# $Date: 2015-03-30 18:08:29 -0700 (Mon, 30 Mar 2015) $
+# $Author: sighakol $
+# Release : $Name: PMC_EFC_2_2_0 $
+#
+#****************************************************************************/
+
+VERSION $Name: PMC_EFC_2_2_0 $
+
+#-------------------------------------------------------------------------------
+#                           EEPROM IMAGE
+#; my($nodeid, $dm_nodeid, $pcie_nodeid, $gpio_nodeid);
+#; $dm_nodeid = 0x54;
+#; $pcie_nodeid = 0x40;
+#; $gpio_nodeid = 0x30;
+#; sub REGADDR { my($node, $addr) = @_;   sprintf("0x10%x", 0x80000000 | ($node<<19) | $addr); }
+#-------------------------------------------------------------------------------
+
+
+#
+# Set SPI interface to Alternate function 0
+#
+MEM_WR  ` REGADDR($gpio_nodeid, 0x6000c)`  0x00000000    0x00000000
+
+#
+# The "SPI_WS" line below sets the SPI interface speed.
+# 0 - 40MHz
+# 1 - 20MHz
+# 2 - 10MHz
+# 3 -  5MHz
+# If commented then default is 1MHz
+# SPI_WS 1
+
+# Selecting single/dual port PCIe
+# Set the Bits 31:30 for port selection
+#   Bit-31 : Port-0
+#   Bit-30 : Port-1
+#   Single  port:   0x80000000
+#   Dual    port:   0xC0000000
+# If nothing is set, single port 0 is used by default
+#MEM_WR  ` REGADDR($dm_nodeid, 0x60118)`  0x00000000    0x80000000 
+MEM_WR  ` REGADDR($dm_nodeid, 0x60118)`  0x00000000    0xC0000000 
+
+# PCIEICTL - PCIe Interface Control Regisiter
+# Mode [2:0]
+# 0 disabled
+# 1 PCIe x8 Port
+# 2 PCIe x4 Port
+# 4 PCIe x4x4 Dual Port
+# 8 PCIe x2x2 Dual Port
+
+#; system("perl ../../../utils/perlpp -m \"#;\" -e '\$main::pcieictl_single_port=2' -e '\$main::pcieictl_dual_port=4' -e '\$main::debug_stub=$main::debug_stub' pcieConfig.input");
+
+SKIP      0x35

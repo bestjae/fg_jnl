@@ -1,0 +1,32 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+
+
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+
+<Test scenario : namespace write -> dsm -> flush -> read -> I/O verify test>
+Test scenario progress : 1/1
+write /dev/nvme0n1 (start block : 0, request_size :16 sector)
+DSM /dev/nvme0n1 (start block : 0, request_size :16 sector)
+flush /dev/nvme0n1
+read /dev/nvme0n1 (start block : 0, request_size :16 sector)
+/dev/nvme0 DSM test fail

@@ -1,0 +1,4202 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> attach -> attach -> attach -> ... -> attach test>
+Test scenario progress : 1/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 2/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 3/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 4/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 5/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 6/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 7/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 8/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+Test scenario progress : 9/10
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test.
+
+
+
+<Device fault verif>
+Rescanning /dev/nvme0n1
+.....1 SPOR Time : 5.129 seconds [ 2016. 11. 10. (목) 15:31:13 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> create -> detach -> detach -> ... -> detach test>
+Test scenario progress : 1/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 2/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 3/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 4/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 5/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 6/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 7/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 8/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 9/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test..
+
+
+
+<Device fault verify>
+Rescanning /dev/nvme0n1
+.....2 SPOR Time : 5.127 seconds [ 2016. 11. 10. (목) 15:31:54 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> create -> attach -> attach -> ... -> attach test>
+Test scenario progress : 1/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 2/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 3/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 4/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 5/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 6/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 7/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 8/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+Test scenario progress : 9/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+Deleting all namespace for test..
+
+
+
+>Device fault verify>
+Rescanning /dev/nvme0n1
+.....2 SPOR Time : 5.127 seconds [ 2016. 11. 10. (목) 15:32:36 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> create ->create -> detach -> detach-> ... -> detach test>
+Test scenario progress : 1/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 2/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 3/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 4/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 5/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 6/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 7/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 8/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 9/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+
+
+<Device fault verify>
+Rescanning /dev/nvme0n1
+.....3 SPOR Time : 5.125 seconds [ 2016. 11. 10. (목) 15:33:28 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+Namespace create-create-create-detach-detach-...-detach test start
+Test scenario progress : 1/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 2/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 3/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 4/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 5/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 6/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 7/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 8/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+Test scenario progress : 9/10
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+Deleting all namespace for test...
+
+
+
+<Device fault verify>
+Rescanning /dev/nvme0n1
+.....3 SPOR Time : 5.124 seconds [ 2016. 11. 10. (목) 15:34:20 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> delete -> attach test>
+Test scenario progress : 1/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 2/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 3/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 4/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 5/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 6/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 7/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 8/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 9/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+Test scenario progress : 10/10
+(create 1 namespace -> delete 1 namespace -> attach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> attach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> attach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> attach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> attach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> attach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> attach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+[1A[35C-> attach-ns (purpose of testing)
+
+
+
+
+<Device fault verify>
+Rescanning /dev/nvme0n1
+.........1 SPOR Time : 9.147 seconds [ 2016. 11. 10. (목) 15:40:03 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create-delete-detach test>
+Test scenario progress : 1/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 2/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 3/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 4/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 5/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 6/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 7/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 8/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 9/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+Test scenario progress : 10/10
+(create 1 namespace -> delete 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+delete-ns: Success, deleted nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 2 namespace -> delete 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 3 namespace -> delete 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 4 namespace -> delete 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 5 namespace -> delete 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 6 namespace -> delete 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+(create 7 namespace -> delete 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+
+
+
+
+<Device fault verif>y
+Rescanning /dev/nvme0n1
+........1 SPOR Time : 8.142 seconds [ 2016. 11. 10. (목) 15:45:46 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> detach -> delete test>
+Test scenario progress : 1/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 2/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 3/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 4/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 5/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 6/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 7/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 8/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 9/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+Test scenario progress : 10/10
+(create 1 namespace -> detach 1 namespace -> delete 1 namespace)
+create-ns: Success, created nsid:1
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+
+
+(create 2 namespace -> detach 2 namespace -> delete 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+
+
+(create 3 namespace -> detach 3 namespace -> delete 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+
+
+(create 4 namespace -> detach 4 namespace -> delete 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+
+
+(create 5 namespace -> detach 5 namespace -> delete 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+
+
+(create 6 namespace -> detach 6 namespace -> delete 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+
+
+(create 7 namespace -> detach 7 namespace -> delete 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+[1A[35C-> detach-ns (purpose of testing)
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+
+
+
+
+<Device fault verify>
+Rescanning /dev/nvme0n1
+........1 SPOR Time : 8.141 seconds [ 2016. 11. 10. (목) 15:51:30 KST ]
+NVMe device detected success (device check 1)
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+no file to remove
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test.
+
+<Test scenario : Namespace create -> attach -> detach test>
+Test scenario progress : 1/10
+(create 1 namespace -> attach 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+detach-ns: Success, nsid:1
+Deleting all namespace for test.
+
+(create 2 namespace -> attach 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+Deleting all namespace for test..
+
+(create 3 namespace -> attach 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+Deleting all namespace for test...
+
+(create 4 namespace -> attach 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+Deleting all namespace for test....
+
+(create 5 namespace -> attach 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+Deleting all namespace for test.....
+
+(create 6 namespace -> attach 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+Deleting all namespace for test......
+
+(create 7 namespace -> attach 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+attach-ns: Success, nsid:7
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+detach-ns: Success, nsid:7
+Deleting all namespace for test.......
+
+Test scenario progress : 2/10
+(create 1 namespace -> attach 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+detach-ns: Success, nsid:1
+Deleting all namespace for test.
+
+(create 2 namespace -> attach 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+Deleting all namespace for test..
+
+(create 3 namespace -> attach 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+Deleting all namespace for test...
+
+(create 4 namespace -> attach 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+Deleting all namespace for test....
+
+(create 5 namespace -> attach 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+Deleting all namespace for test.....
+
+(create 6 namespace -> attach 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+Deleting all namespace for test......
+
+(create 7 namespace -> attach 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+attach-ns: Success, nsid:7
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+detach-ns: Success, nsid:7
+Deleting all namespace for test.......
+
+Test scenario progress : 3/10
+(create 1 namespace -> attach 1 namespace -> detach 1 namespace)
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+detach-ns: Success, nsid:1
+Deleting all namespace for test.
+
+(create 2 namespace -> attach 2 namespace -> detach 2 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+Deleting all namespace for test..
+
+(create 3 namespace -> attach 3 namespace -> detach 3 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+Deleting all namespace for test...
+
+(create 4 namespace -> attach 4 namespace -> detach 4 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+Deleting all namespace for test....
+
+(create 5 namespace -> attach 5 namespace -> detach 5 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+Deleting all namespace for test.....
+
+(create 6 namespace -> attach 6 namespace -> detach 6 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+Deleting all namespace for test......
+
+(create 7 namespace -> attach 7 namespace -> detach 7 namespace)
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:1
+attach-ns: Success, nsid:2
+attach-ns: Success, nsid:3
+attach-ns: Success, nsid:4
+attach-ns: Success, nsid:5
+attach-ns: Success, nsid:6
+attach-ns: Success, nsid:7
+detach-ns: Success, nsid:1
+detach-ns: Success, nsid:2
+detach-ns: Success, nsid:3
+detach-ns: Success, nsid:4
+detach-ns: Success, nsid:5
+detach-ns: Success, nsid:6
+detach-ns: Success, nsid:7
+Deleting all namespace for test.......
+
+Test scenario progress : 4/10
+(create 1 namespace -> attach 1 namespace -> detach 1 namespace)

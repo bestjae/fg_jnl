@@ -1,0 +1,107 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for testdelete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+Rescan retry success
+
+
+<Test scenario : namespace write -> flush -> read test>
+Test scenario progress : 1/1
+write /dev/nvme0n1 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n1
+read /dev/nvme0n1(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n1 I/O verify with flush success
+
+
+write /dev/nvme0n2 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n2
+read /dev/nvme0n2(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n2 I/O verify with flush success
+
+
+write /dev/nvme0n3 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n3
+read /dev/nvme0n3(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n3 I/O verify with flush success
+
+
+write /dev/nvme0n4 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n4
+read /dev/nvme0n4(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n4 I/O verify with flush success
+
+
+write /dev/nvme0n5 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n5
+read /dev/nvme0n5(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n5 I/O verify with flush success
+
+
+write /dev/nvme0n6 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n6
+read /dev/nvme0n6(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n6 I/O verify with flush success
+
+
+write /dev/nvme0n7 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n7
+read /dev/nvme0n7(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n7 I/O verify with flush success
+
+
+write /dev/nvme0n8 (start block : 1, request_size :512 sector)
+write: Success
+flush /dev/nvme0n8
+read /dev/nvme0n8(start block : 1, request_size :512 sector)
+read: Success
+/dev/nvme0n8 I/O verify with flush success
+
+
+
+
+<Device fault verify>
+Rescan retry success
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

@@ -1,0 +1,298 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for testdelete-ns: Success, deleted nsid:1
+.delete-ns: Success, deleted nsid:2
+.delete-ns: Success, deleted nsid:3
+.delete-ns: Success, deleted nsid:4
+.delete-ns: Success, deleted nsid:5
+.delete-ns: Success, deleted nsid:6
+.delete-ns: Success, deleted nsid:7
+.delete-ns: Success, deleted nsid:8
+.
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+Rescan retry success
+[ 0]:0x1
+[ 1]:0x2
+[ 2]:0x3
+[ 3]:0x4
+[ 4]:0x5
+[ 5]:0x6
+[ 6]:0x7
+[ 7]:0x8
+[ 0]:0x1
+[ 1]:0x2
+[ 2]:0x3
+[ 3]:0x4
+[ 4]:0x5
+[ 5]:0x6
+[ 6]:0x7
+[ 7]:0x8
+
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+sda 8:0 0 119.2G 0 disk
+├─sda1 8:1 0 512M 0 part /boot/efi
+├─sda2 8:2 0 86.8G 0 part /
+└─sda3 8:3 0 31.9G 0 part [SWAP]
+nvme0n1 259:0 0 19.5G 0 disk
+nvme0n2 259:1 0 19.5G 0 disk
+nvme0n3 259:2 0 19.5G 0 disk
+nvme0n4 259:3 0 19.5G 0 disk
+nvme0n5 259:4 0 19.5G 0 disk
+nvme0n6 259:5 0 19.5G 0 disk
+nvme0n7 259:6 0 19.5G 0 disk
+nvme0n8 259:7 0 19.5G 0 disk
+<Test scenario : (/dev/nvme0n1~nvme0n4 : get-log), (/dev/nvme0n5~nvme0n8 : read/write)>
+Test scenario progress : 1/1
+get_log -> /dev/nvme0n1,2,3,4
+/dev/nvme0n5 -> read: Success
+/dev/nvme0n6 -> write: Success
+/dev/nvme0n7 -> read: Success
+/dev/nvme0n8 -> write: Success
+
+
+<Device fault verify>
+Rescan retry success
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: Success, deleted nsid:1
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+NVMe Status:INVALID_NS(b)
+-> delete-ns (purpose of testing)
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+rmmod: ERROR: Module nvme is in use
+
+
+Rescan retry fail
+Press CTRL + c for stop
+<Test Environment Check>
+/dev/nvme1 detect success
+/dev/nvme0: No such file or directory
+/root/script_test/script/macro/namespace_io/nsio_test/../oacs_namespace.sh: line 21: [: -eq: unary operator expected
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+rmmod: ERROR: Module nvme is in use
+
+
+Rescan retry fail
+Press CTRL + c for stop
+<Test Environment Check>
+/dev/nvme1 detect success
+/dev/nvme0: No such file or directory
+/root/script_test/script/macro/namespace_io/nsio_test/../oacs_namespace.sh: line 21: [: -eq: unary operator expected
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+rmmod: ERROR: Module nvme is in use
+
+
+Rescan retry fail
+Press CTRL + c for stop
+<Test Environment Check>
+/dev/nvme1 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+rmmod: ERROR: Module nvme is in use
+/dev/nvme1 rescan start
+/dev/nvme1n1 Rescan retry success
+/dev/nvme1n1 rescan start
+/dev/nvme1n2 Rescan retry success
+/dev/nvme1n2 rescan start
+/dev/nvme1n3 Rescan retry success
+/dev/nvme1n3 rescan start
+/dev/nvme1n4 Rescan retry success
+/dev/nvme1n4 rescan start
+/dev/nvme1n5 Rescan retry success
+/dev/nvme1n5 rescan start
+/dev/nvme1n6 Rescan retry success
+/dev/nvme1n6 rescan start
+/dev/nvme1n7 Rescan retry success
+/dev/nvme1n7 rescan start
+/dev/nvme1n8 Rescan retry success
+/n/dev/nvme0: No such file or directory
+/dev/nvme0: No such file or directory
+
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+sda 8:0 0 232.9G 0 disk
+├─sda1 8:1 0 217G 0 part /
+├─sda2 8:2 0 1K 0 part
+└─sda5 8:5 0 15.9G 0 part [SWAP]
+nvme1n1 259:9 0 19.5G 0 disk
+nvme1n2 259:10 0 19.5G 0 disk
+nvme1n3 259:11 0 19.5G 0 disk
+nvme1n4 259:12 0 19.5G 0 disk
+nvme1n5 259:13 0 19.5G 0 disk
+nvme1n6 259:14 0 19.5G 0 disk
+nvme1n7 259:15 0 19.5G 0 disk
+nvme1n8 259:16 0 19.5G 0 disk
+<Test scenario : (/dev/nvme0n1~nvme0n4 : get-log), (/dev/nvme0n5~nvme0n8 : read/write)>
+Test scenario progress : 1/1
+get_log -> /dev/nvme0n1,2,3,4
+/dev/nvme0n5 -> read: Success
+/dev/nvme0n6 -> write: Success
+/dev/nvme0n7 -> read: Success
+/dev/nvme0n8 -> write: Success
+
+
+<Device fault verify>
+rmmod: ERROR: Module nvme is in use
+/dev/nvme1 rescan start
+/dev/nvme1n1 Rescan retry success
+/dev/nvme1n1 rescan start
+/dev/nvme1n2 Rescan retry success
+/dev/nvme1n2 rescan start
+/dev/nvme1n3 Rescan retry success
+/dev/nvme1n3 rescan start
+/dev/nvme1n4 Rescan retry success
+/dev/nvme1n4 rescan start
+/dev/nvme1n5 Rescan retry success
+/dev/nvme1n5 rescan start
+/dev/nvme1n6 Rescan retry success
+/dev/nvme1n6 rescan start
+/dev/nvme1n7 Rescan retry success
+/dev/nvme1n7 rescan start
+/dev/nvme1n8 Rescan retry success
+/nNVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

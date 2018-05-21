@@ -1,0 +1,209 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+
+
+create-ns: Success, created nsid:1
+create-ns: Success, created nsid:2
+create-ns: Success, created nsid:3
+create-ns: Success, created nsid:4
+create-ns: Success, created nsid:5
+create-ns: Success, created nsid:6
+create-ns: Success, created nsid:7
+create-ns: Success, created nsid:8
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+
+<Test scenario : namespace out of range write verify test>
+Test scenario progress : 1/1
+DSM /dev/nvme0n1 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n1 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n1 out of range write commad fail -> test success
+DSM /dev/nvme0n2 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n2 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n2 out of range write commad fail -> test success
+DSM /dev/nvme0n3 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n3 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n3 out of range write commad fail -> test success
+DSM /dev/nvme0n4 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n4 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n4 out of range write commad fail -> test success
+DSM /dev/nvme0n5 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n5 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n5 out of range write commad fail -> test success
+DSM /dev/nvme0n6 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n6 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n6 out of range write commad fail -> test success
+DSM /dev/nvme0n7 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n7 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n7 out of range write commad fail -> test success
+DSM /dev/nvme0n8 (start block : 781402013 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401613 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402014 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401614 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402015 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401615 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402016 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401616 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402017 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401617 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402018 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401618 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402019 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401619 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402020 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401620 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781402021 , request_size : 512 sector)
+DSM /dev/nvme0n8 (start block : 781401621 , request_size : 512 sector)
+/dev/nvme0n8 out of range write commad fail -> test success
+
+
+<Device fault verify>
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

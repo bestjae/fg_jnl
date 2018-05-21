@@ -1,0 +1,40 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+delete-ns: namespace-id parameter required
+delete-ns command fail
+delete-ns end...
+delete-ns: Success, deleted nsid:1
+delete-ns: Success, deleted nsid:2
+delete-ns: Success, deleted nsid:3
+delete-ns: Success, deleted nsid:4
+delete-ns: Success, deleted nsid:5
+delete-ns: Success, deleted nsid:6
+delete-ns: Success, deleted nsid:7
+delete-ns: Success, deleted nsid:8
+
+
+create-ns: Success, created nsid:1
+attach-ns: Success, nsid:1
+create-ns: Success, created nsid:2
+attach-ns: Success, nsid:2
+create-ns: Success, created nsid:3
+attach-ns: Success, nsid:3
+create-ns: Success, created nsid:4
+attach-ns: Success, nsid:4
+create-ns: Success, created nsid:5
+attach-ns: Success, nsid:5
+create-ns: Success, created nsid:6
+attach-ns: Success, nsid:6
+create-ns: Success, created nsid:7
+attach-ns: Success, nsid:7
+create-ns: Success, created nsid:8
+attach-ns: Success, nsid:8
+Rescan retry success
+<Test scenario : namespace out of range write verify test>
+/root/script_wr/macro/namespace_io/nsio_test/nsio_test_23.sh: line 79: syntax error near unexpected token `fi'
+/root/script_wr/macro/namespace_io/nsio_test/nsio_test_23.sh: line 79: ` fi'

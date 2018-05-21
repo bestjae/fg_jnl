@@ -1,0 +1,601 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test........
+
+<Test scenario : smart-log value test with SPOR>
+Test scenario progress : 1/1
+Namespace = 1 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2648 / 2656 : success)
+host_write_commands (440 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 2 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 3 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 4 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 5 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 6 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 7 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 8 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Global Namespace smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (52 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (307 / 307 : success)
+data_units_written (207 / 207 : success)
+host_read_commands (2656 / 2656 : success)
+host_write_commands (448 / 448 : success)
+controller_busy_time (0 / 0 : success)
+power_cycles (83 / 83 : success)
+power_on_hours (0 / 0 : success)
+unsafe_shutdowns (0 / 0 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (32 / 32 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (52 : correct)
+Temperature Sensor 2 (49 : correct)
+Temperature Sensor 3 (53 : correct)
+Temperature Sensor 4 (0 : correct)
+Temperature Sensor 5 (0 : correct)
+Temperature Sensor 6 (0 : correct)
+Temperature Sensor 7 (0 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+
+
+<Device fault verify>
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+<Test Environment Check>
+/dev/nvme0 detect success
+Namespace management bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+
+
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+/n<Test scenario : smart-log value test with SPOR>
+Test scenario progress : 1/1
+Namespace = 1 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212441 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694135 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (13 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 2 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 3 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 4 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 5 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 6 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 7 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (38 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Namespace = 8 smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+Global Namespace smart log check with I/O
+check smart-log value
+critical_warning (0 / 0 : success)
+temperature (40 : correct)
+available_spare (100 / 100 : success)
+available_spare_threshold (10 / 10 : success)
+percentage_used (0 / 0 : success)
+data_units_read (3212449 / 3212449 : success)
+data_units_written (5331670 / 5331670 : success)
+host_read_commands (2515694631 / 2515694631 : success)
+host_write_commands (2546448787 / 2546448787 : success)
+controller_busy_time (787 / 787 : success)
+power_cycles (16 / 16 : success)
+power_on_hours (11 / 11 : success)
+unsafe_shutdowns (8 / 8 : success)
+media_errors (0 / 0 : success)
+num_err_log_entries (0 / 0 : success)
+Warning Temperature Time (0 / 0 : success)
+Critical Composite Temperature Time (0 / 0 : success)
+Temperature Sensor 1 (40 : correct)
+Temperature Sensor 2 (41 : correct)
+Temperature Sensor 3 (39 : correct)
+Temperature Sensor 4 (40 : correct)
+Temperature Sensor 5 (36 : correct)
+Temperature Sensor 6 (37 : correct)
+Temperature Sensor 7 (38 : correct)
+Temperature Sensor 8 (0 : correct)
+
+
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+/n
+
+<Device fault verify>
+/dev/nvme0 rescan start
+/dev/nvme0n1 Rescan retry success
+/dev/nvme0n1 rescan start
+/dev/nvme0n2 Rescan retry success
+/dev/nvme0n2 rescan start
+/dev/nvme0n3 Rescan retry success
+/dev/nvme0n3 rescan start
+/dev/nvme0n4 Rescan retry success
+/dev/nvme0n4 rescan start
+/dev/nvme0n5 Rescan retry success
+/dev/nvme0n5 rescan start
+/dev/nvme0n6 Rescan retry success
+/dev/nvme0n6 rescan start
+/dev/nvme0n7 Rescan retry success
+/dev/nvme0n7 rescan start
+/dev/nvme0n8 Rescan retry success
+/nNVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)

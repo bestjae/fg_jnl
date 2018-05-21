@@ -1,0 +1,533 @@
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+
+
+<Test scenario : update firmware with action 1>
+Test scenario progress : 1/1
+Target slot: 2 , Taget firmware version: testfw02
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Firmware update fail
+current firmware : 99934a95 , target firmware : testfw02
+
+
+Target slot: 3 , Taget firmware version: testfw03
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:1 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Firmware update fail
+current firmware : 99934a95 , target firmware : testfw03
+
+
+Target slot: 4 , Taget firmware version: testfw04
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+
+
+<Test scenario : update firmware with action 1>
+Test scenario progress : 1/1
+Target slot: 2 , Taget firmware version: testfw02
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Firmware update fail
+current firmware : 99934a95 , target firmware : testfw02
+
+
+Target slot: 3 , Taget firmware version: testfw03
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:1 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Firmware update fail
+current firmware : 99934a95 , target firmware : testfw03
+
+
+Target slot: 4 , Taget firmware version: testfw04
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:1 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+
+
+Rescan retry fail
+Press CTRL + c for stop
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+
+
+Rescan retry fail
+Press CTRL + c for stop
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+create-ns command fail
+create-ns end...
+[1mUsage: nvme attach-ns <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m
+attach-ns commnad fail
+attach-ns end...
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+create-ns command fail
+create-ns end...
+attach-ns: Success, nsid:1
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+attach-ns commnad fail
+attach-ns end...
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+Firmware initialization
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Rescan retry success
+
+
+<Test scenario : update firmware with action 1>
+Test scenario progress : 1/1
+Target slot: 2 , Taget firmware version: testfw02
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw02 , target firmware : testfw02
+
+
+Target slot: 3 , Taget firmware version: testfw03
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:1 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw03 , target firmware : testfw03
+
+
+Target slot: 4 , Taget firmware version: testfw04
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:1 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw04 , target firmware : testfw04
+
+
+Target slot: 5 , Taget firmware version: testfw05
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:1 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw05 , target firmware : testfw05
+
+
+Target slot: 6 , Taget firmware version: testfw06
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:1 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw06 , target firmware : testfw06
+
+
+Target slot: 7 , Taget firmware version: testfw07
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:1 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw07 , target firmware : testfw07
+
+
+<Device fault verify>
+Rescan retry success
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
+<Test Environment Check>
+/dev/nvme0 detect success
+Firmware bit on
+
+
+<Test Environment initilazation>
+Deleting all namespace for test
+Firmware initialization
+Firmware download success
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Rescan retry success
+
+
+<Test scenario : update firmware with action 1>
+Test scenario progress : 1/1
+Target slot: 2 , Taget firmware version: testfw02
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:1 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw02 , target firmware : testfw02
+
+
+Target slot: 3 , Taget firmware version: testfw03
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:1 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw03 , target firmware : testfw03
+
+
+Target slot: 4 , Taget firmware version: testfw04
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:1 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw04 , target firmware : testfw04
+
+
+Target slot: 5 , Taget firmware version: testfw05
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:1 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw05 , target firmware : testfw05
+
+
+Target slot: 6 , Taget firmware version: testfw06
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:1 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:0 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw06 , target firmware : testfw06
+
+
+Target slot: 7 , Taget firmware version: testfw07
+Firmware download success
+(Download firmware testfw02)
+Success activating firmware action:0 slot:2, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw03)
+Success activating firmware action:0 slot:3, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw04)
+Success activating firmware action:0 slot:4, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw05)
+Success activating firmware action:0 slot:5, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw06)
+Success activating firmware action:0 slot:6, but firmware requires conventional reset
+Firmware download success
+(Download firmware testfw07)
+Success activating firmware action:1 slot:7, but firmware requires conventional reset
+Rescan retry success
+Firmware update success
+current firmware : testfw07 , target firmware : testfw07
+
+
+<Device fault verify>
+Rescan retry success
+NVMe device detected success (device check 2)
+NVMe I/O verify test success (device check 3)
