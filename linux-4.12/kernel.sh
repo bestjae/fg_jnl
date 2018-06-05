@@ -5,7 +5,7 @@
 # File Name : kernel.sh
 # Purpose : 
 # Creation Date : 2017-01-03
-# Last Modified : 2018-03-28 11:26:40
+# Last Modified : 2018-05-28 18:43:43
 # Created By : Yongjae Choi <bestjae@naver.com>
 # 
 #
@@ -22,7 +22,6 @@
 #
 
 
-
 make -j 32
 
 make modules
@@ -33,4 +32,13 @@ make install
 
 cp /boot/grub/grub.cfg ./grub.old
 
-cp ./grub.cfg /boot/grub/
+cp ./grub.cfg /boot/grub/ 
+
+if [ $# -gt 0 ]; then 
+	if [ $1 -eq "1" ] ; then
+		reboot
+	fi 
+fi
+
+
+exit 1

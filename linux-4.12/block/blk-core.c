@@ -1642,6 +1642,8 @@ out:
 void blk_init_request_from_bio(struct request *req, struct bio *bio)
 {
 	struct io_context *ioc = rq_ioc(bio);
+	char *bestjae_dev_name = "nvme0n1";
+	char bestjae_b[BDEVNAME_SIZE];
 
 	if (bio->bi_opf & REQ_RAHEAD)
 		req->cmd_flags |= REQ_FAILFAST_MASK;
@@ -1650,7 +1652,11 @@ void blk_init_request_from_bio(struct request *req, struct bio *bio)
 	if(atomic_read(&bestjae_atomic) == 1 ) //bestjae
 	{
 		req->bestjae_req_bh = bio->bi_iter.bestjae_bvec;
-		printk("bestjae : (%s) req->bestjae_req_bh-%d\n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
+		req->bestjae_atomic_num = 4; // Temporary cord
+		bdevname(bio->bi_bdev,bestjae_b);
+		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
+			printk("bestjae : (%s) req->bestjae_req_bh-%d\n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
+		}
 	}
 	if (ioprio_valid(bio_prio(bio)))
 		req->ioprio = bio_prio(bio);

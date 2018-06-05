@@ -441,6 +441,11 @@ struct inode *ext2_new_inode(struct inode *dir, umode_t mode,
 	struct ext2_inode_info *ei;
 	struct ext2_sb_info *sbi;
 	int err;
+	
+	//bestjae	
+	if(atomic_read(&bestjae_atomic) == 1) {
+		printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	sb = dir->i_sb;
 	inode = new_inode(sb);

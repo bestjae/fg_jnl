@@ -888,6 +888,7 @@ ext2_write_begin(struct file *file, struct address_space *mapping,
 		struct page **pagep, void **fsdata)
 {
 	int ret;
+	printk("bestjae : %s\n",__FUNCTION__);
 
 	ret = block_write_begin(mapping, pos, len, flags, pagep,
 				ext2_get_block);

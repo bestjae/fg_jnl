@@ -199,7 +199,7 @@ static int fat_writepages(struct address_space *mapping,
 	//bestjae	
 	if(atomic_read(&bestjae_atomic) == 1) {
 		printk("bestjae : %s\n",__FUNCTION__);
-		wbc->bestjae_wbc = ++bestjae_fat_id;
+		wbc->bestjae_wbc = bestjae_fat_id++;
 		printk("bestjae : wbc.bestjae - %d\n",wbc->bestjae_wbc);
 	}
 	return mpage_writepages(mapping, wbc, fat_get_block);

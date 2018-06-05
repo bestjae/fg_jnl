@@ -2171,9 +2171,9 @@ int write_cache_pages(struct address_space *mapping,
 	int tag;
 
 	//bestjae
-	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : %s \n",__FUNCTION__);
-	}
+	//if(atomic_read(&bestjae_atomic) == 1) {
+	//	printk("bestjae : %s \n",__FUNCTION__);
+	//}
 
 
 

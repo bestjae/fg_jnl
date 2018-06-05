@@ -803,6 +803,11 @@ static int vfat_create(struct inode *dir, struct dentry *dentry, umode_t mode,
 	inode->i_version++;
 	inode->i_mtime = inode->i_atime = inode->i_ctime = ts;
 	/* timestamp is already written, so mark_inode_dirty() is unneeded. */
+	
+	//bestjae
+	printk("bestjae : vfat_create\n");
+
+
 
 	d_instantiate(dentry, inode);
 out:

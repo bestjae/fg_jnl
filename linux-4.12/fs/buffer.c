@@ -1845,7 +1845,7 @@ int __block_write_full_page(struct inode *inode, struct page *page,
 	unlock_page(page);
 
 	//bestjae 
-	//if(atomic_read(&bestjae_atomic) == 1) {
+	//if(atomic_read(&	stjae_atomic) == 1) {
 	//	printk("bestjae : block_write_full_page %d,%d,%d\n",bestjae_i,bestjae_j,bestjae_k);
 	//}
 
@@ -2080,13 +2080,13 @@ int __block_write_begin_int(struct page *page, loff_t pos, unsigned len,
 		}
 	}
 	//bestjae 
-	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : %s \n",__FUNCTION__);
-		//bdevname(inode->i_bdev,bestjae_b);
-		//if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
-		//	printk("bestjae : write_begin_int, nvme0n1 - %d\n",bestjae_i);
-		//}
-	}
+	//if(atomic_read(&bestjae_atomic) == 1) {
+	//	printk("bestjae : %s \n",__FUNCTION__);
+	//	//bdevname(inode->i_bdev,bestjae_b);
+	//	//if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
+	//	//	printk("bestjae : write_begin_int, nvme0n1 - %d\n",bestjae_i);
+	//	//}
+	//}
 	/*
 	 * If we issued read requests - let them complete.
 	 */

@@ -62,6 +62,7 @@ static void mpage_end_io(struct bio *bio)
 static struct bio *mpage_bio_submit(int op, int op_flags, struct bio *bio)
 {
 	if(atomic_read(&bestjae_atomic) == 1) {
+		bio->bi_iter.bestjae_bvec = bestjae_fat_id;
 		printk("bestjae : %s - bestjae_bvec-%d \n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
 	}
 	bio->bi_end_io = mpage_end_io;
