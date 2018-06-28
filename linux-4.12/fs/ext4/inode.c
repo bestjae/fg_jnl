@@ -48,6 +48,12 @@
 
 #define MPAGE_DA_EXTENT_TAIL 0x01
 
+//bestjae 
+extern atomic_t bestjae_atomic;
+extern unsigned int bestjae_fs_atomic;
+extern unsigned int bestjae_global_atomic;
+
+
 static __u32 ext4_inode_csum(struct inode *inode, struct ext4_inode *raw,
 			      struct ext4_inode_info *ei)
 {
@@ -1103,6 +1109,7 @@ static int ext4_block_write_begin(struct page *page, loff_t pos, unsigned len,
 	unsigned bbits;
 	struct buffer_head *bh, *head, *wait[2], **wait_bh = wait;
 	bool decrypt = false;
+	
 
 	BUG_ON(!PageLocked(page));
 	BUG_ON(from > PAGE_SIZE);
@@ -1188,6 +1195,10 @@ static int ext4_write_begin(struct file *file, struct address_space *mapping,
 	struct page *page;
 	pgoff_t index;
 	unsigned from, to;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (unlikely(ext4_forced_shutdown(EXT4_SB(inode->i_sb))))
 		return -EIO;
@@ -2050,6 +2061,10 @@ static int ext4_writepage(struct page *page,
 	struct inode *inode = page->mapping->host;
 	struct ext4_io_submit io_submit;
 	bool keep_towrite = false;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (unlikely(ext4_forced_shutdown(EXT4_SB(inode->i_sb)))) {
 		ext4_invalidatepage(page, 0, PAGE_SIZE);
@@ -2674,6 +2689,16 @@ static int ext4_writepages(struct address_space *mapping,
 	bool done;
 	struct blk_plug plug;
 	bool give_up_on_write = false;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+		bestjae_fs_atomic = 3;
+		bestjae_global_atomic++;
+		if(bestjae_global_atomic >= 1024) {
+			bestjae_global_atomic = 0 ;
+		}
+		wbc->bestjae_wbc++;
+	}
 
 	if (unlikely(ext4_forced_shutdown(EXT4_SB(inode->i_sb))))
 		return -EIO;
@@ -3220,6 +3245,10 @@ static sector_t ext4_bmap(struct address_space *mapping, sector_t block)
 	struct inode *inode = mapping->host;
 	journal_t *journal;
 	int err;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	/*
 	 * We can get here for an inline file via the FIBMAP ioctl
@@ -3360,6 +3389,10 @@ static int ext4_iomap_begin(struct inode *inode, loff_t offset, loff_t length,
 	unsigned long last_block = (offset + length - 1) >> blkbits;
 	struct ext4_map_blocks map;
 	int ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (WARN_ON_ONCE(ext4_has_inline_data(inode)))
 		return -ERANGE;
@@ -3576,6 +3609,10 @@ static ssize_t ext4_direct_IO_write(struct kiocb *iocb, struct iov_iter *iter)
 	loff_t final_size = offset + count;
 	int orphan = 0;
 	handle_t *handle;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (final_size > inode->i_size) {
 		/* Credits for sb + inode write */
@@ -5147,6 +5184,10 @@ out_brelse:
 int ext4_write_inode(struct inode *inode, struct writeback_control *wbc)
 {
 	int err;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (WARN_ON_ONCE(current->flags & PF_MEMALLOC))
 		return 0;
@@ -6061,3 +6102,4 @@ int ext4_get_next_extent(struct inode *inode, ext4_lblk_t lblk,
 	result->es_len = 0;
 	return 0;
 }
+

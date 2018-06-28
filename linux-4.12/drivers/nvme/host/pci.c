@@ -62,14 +62,7 @@
 extern int bestjae_global;
 extern atomic_t bestjae_atomic;
 int bestjae_count;
-u16 head_arr[NVME_Q_DEPTH];
-u16 head_start;
-u16 tail_end = 1024;
-u16 tail_arr[NVME_Q_DEPTH];
-struct nvme_queue bestjae_nvme_queue1;
-struct nvme_queue bestjae_nvme_queue2;
 int bestjae_queue_rq_count = 0;
-int bestjae_cnt = 0;
 int bestjae_command_cnt = 0;
 struct nvme_command bestjae_nvme_command[1024];
 int bestjae_nvme_command_cnt[1024];
@@ -439,13 +432,13 @@ static void __nvme_submit_cmd(struct nvme_queue *nvmeq,
 	if (nvmeq->sq_cmds_io)
 	{
 		if(atomic_read(&bestjae_atomic) == 1) {
-			printk("bestjae : (nvme)%s//sq_smds_io\n",__FUNCTION__);
+			trace_printk("bestjae : (nvme)%s//sq_smds_io\n",__FUNCTION__);
 		}
 		memcpy_toio(&nvmeq->sq_cmds_io[tail], cmd, sizeof(*cmd));
 	}else
 	{
 		if(atomic_read(&bestjae_atomic) == 1) {
-			printk("bestjae : (nvme)%s//sq_cmds\n",__FUNCTION__);
+			trace_printk("bestjae : (nvme)%s//sq_cmds\n",__FUNCTION__);
 		}
 		memcpy(&nvmeq->sq_cmds[tail], cmd, sizeof(*cmd));
 	}
@@ -455,7 +448,7 @@ static void __nvme_submit_cmd(struct nvme_queue *nvmeq,
 					      nvmeq->dbbuf_sq_ei))
 	{
 		if(atomic_read(&bestjae_atomic) == 1) {
-			printk("bestjae : (nvme)%s//dbbuf_check \n",__FUNCTION__);
+			trace_printk("bestjae : (nvme)%s//dbbuf_check \n",__FUNCTION__);
 		}
 		writel(tail, nvmeq->q_db);
 	}
@@ -725,16 +718,6 @@ static void nvme_unmap_data(struct nvme_dev *dev, struct request *req)
 	nvme_cleanup_cmd(req);
 	nvme_free_iod(dev, req);
 }
-static void bestjae_check_skip_command(struct nvme_queue *nvmeq)
-{
-	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : (nvme)check_skip_command\n");
-		/*nvmeq->cq_head = head_start;
-		nvmeq->sq_tail = tail_end;
-		nvme_process_cq(nvmeq);	
-		*/
-	}
-}
 static int bestjae_nvme_commnad_exec(struct nvme_command *cmnd, struct request *req, struct nvme_queue *nvmeq, struct nvme_dev *dev)
 {
 	int ret;
@@ -772,14 +755,15 @@ static void bestjae_nvme_queue_scan( struct request *req, struct nvme_queue *nvm
 	int ret;
 	int atomic_num = (bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2<< 32 )>> 32;
 	bestjae_nvme_command_cnt[(bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2 >> 32)]++;
-	printk("bestjae : (nvme)bestjae_nvme_command /atomic numc -%d \n",atomic_num);
+	trace_printk("bestjae : (nvme)bestjae_nvme_command /atomic numc - %d / %d \n",
+			bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2 >> 32 , atomic_num);
 	if((int)bestjae_nvme_command_cnt[(bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2 >> 32)] ==
 			(bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2 << 32) >> 32 ) {
-		printk("bestjae : (nvme) f u l l - c o u n t \n");
+		trace_printk("bestjae : (nvme) f u l l - c o u n t \n");
 		for(i = 0 ; i < 1024 ; i++) {
 			if((bestjae_nvme_command[i].rw.rsvd2 >> 32) 
 					== (bestjae_nvme_command[bestjae_command_cnt].rw.rsvd2 >> 32) ) {
-				printk("bestjae : (nvme) nvme command_exec NUM");
+				trace_printk("bestjae : (nvme) nvme command_exec NUM");
 				ret = bestjae_nvme_commnad_exec(&bestjae_nvme_command[i],&bestjae_request[i],nvmeq,dev);	
 			}
 		}
@@ -793,7 +777,7 @@ static void bestjae_nvme_queue_push(struct nvme_command *cmnd,struct request *re
 	memcpy(&bestjae_request[bestjae_command_cnt],req,sizeof(struct request));
 	bestjae_nvme_queue_scan(req, nvmeq, dev);
 	bestjae_command_cnt++;
-	if(bestjae_command_cnt > 1024 ) {
+	if(bestjae_command_cnt >= 1024 ) {
 		bestjae_command_cnt = 0;
 	}
 }
@@ -812,11 +796,6 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	struct nvme_command cmnd;
 	int ret = BLK_MQ_RQ_QUEUE_OK;
 	
-	//bestjae
-	u16 tail = nvmeq->sq_tail;
-	u16 head = nvmeq->cq_head;
-	bool bestjae_again = false;
-	struct nvme_command *cmd = &cmnd;
 	/*
 	 * If formated with metadata, require the block layer provide a buffer
 	 * unless this namespace is formated such that the metadata can be
@@ -831,17 +810,17 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	}
 	
 	//if(atomic_read(&bestjae_atomic) == 1) {
-	//	//printk("bestjae : (nvme)bestjae_req_bh = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
-	//	//printk("bestjae : (nvme)queue_count - %d\n",bestjae_queue_rq_count++);
-	//	//printk("bestjae : (nvme)req->bio->bi_bdev->bd_dev - %d\n",req->bio->bi_bdev->bd_dev);
-	//	//printk("bestjae : (nvme)cmnd.rw.slba, length -%d_%d \n",cmnd.rw.slba, cmnd.rw.length);
+	//	//trace_printk("bestjae : (nvme)bestjae_req_bh = %d,%d\n",(cmnd.rw.rsvd2>>32),((cmnd.rw.rsvd2<<32)>>32));
+	//	//trace_printk("bestjae : (nvme)queue_count - %d\n",bestjae_queue_rq_count++);
+	//	//trace_printk("bestjae : (nvme)req->bio->bi_bdev->bd_dev - %d\n",req->bio->bi_bdev->bd_dev);
+	//	//trace_printk("bestjae : (nvme)cmnd.rw.slba, length -%d_%d \n",cmnd.rw.slba, cmnd.rw.length);
 	//	
-	//	printk("bestjae : (nvme) r e q - b h = %d\n",req->bestjae_req_bh);
+	//	trace_printk("bestjae : (nvme) r e q - b h = %d\n",req->bestjae_req_bh);
 	//	
 	//	//if( (cmnd.rw.rsvd2>>32) == 3) {
 	//	if(req->bestjae_req_bh == 3 ){
-	//		printk("bestjae : (nvme) S K I P before setup cmd\n");
-	//		printk("bestjae : bestjae_count - %d\n",bestjae_count++);
+	//		trace_printk("bestjae : (nvme) S K I P before setup cmd\n");
+	//		trace_printk("bestjae : bestjae_count - %d\n",bestjae_count++);
 	//		goto skip;
 	//		//blk_mq_complete_request(req);
 	//	}
@@ -850,35 +829,36 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	ret = nvme_setup_cmd(ns, req, &cmnd);
 	if (ret != BLK_MQ_RQ_QUEUE_OK)
 		return ret;
-	
-	if(atomic_read(&bestjae_atomic) == 1) {
-		if(cmnd.rw.opcode == 0x01){
-			bestjae_nvme_queue_push(&cmnd, req, nvmeq, dev);
-			//printk("bestjae : (nvme)cmnd.rw.slba, length - %d/%d \n",cmnd.rw.slba, cmnd.rw.length);
-			goto skip;
-		}
-	//	if(bestjae_count == 1 ){
-	//		memcpy(&bestjae_nvme_queue1,nvmeq,sizeof(struct nvme_queue));
-	//		spin_unlock_irq(&nvmeq->q_lock);
-	//		bestjae_cnt = 1;
-	//	}
-	}
-			/*
-			goto skip;
-			if(bestjae_count == 2 ){
-				memcpy(&bestjae_nvme_queue2,nvmeq,sizeof(struct nvme_queue));
-				spin_unlock_irq(&nvmeq->q_lock);
-				goto skip;
-			}
-			
-			if(bestjae_count = 3) {
-				printk("bestjae : head, tail upup \n");
-				//tail_end = nvmeq->sq_tail++;
-				//head_start = nvmeq->cq_head++;
-				//memcpy(&nvmeq->sq_cmds[tail], cmd, sizeof(*cmd));
-				//goto skip;
-			}*/
-		
+
+
+	//bestjae 
+	//
+	//INSERT CRASH
+	 //if(atomic_read(&bestjae_atomic) == 1) {
+	 //       if(cmnd.rw.opcode == 0x01){
+	 //       	trace_printk("bestjae : (nvme)Atomic_id / bestjae_count - %d/%d \n",
+	 //       			req->bestjae_req_bh, bestjae_count);
+	 //       	if(req->bestjae_req_bh == 2 ){
+	 //       		if(bestjae_count == 0 || bestjae_count == 1) {
+	 //       			trace_printk("bestjae : (nvme) INSERT WRITE CRASH\n");
+	 //       			bestjae_count++;
+	 //       			goto skip;
+	 //       		}
+	 //       	}
+	 //       }
+	 //}
+	 if(atomic_read(&bestjae_atomic) == 1) {
+		 if(cmnd.rw.opcode == 0x01){
+			 bestjae_nvme_queue_push(&cmnd, req, nvmeq, dev);
+			 trace_printk("bestjae : (nvme) bestjae_nvme_queue_push\n");
+			 trace_printk("bestjae : (nvme)atomic_id / atomic_num - %d/%d \n",
+					 req->bestjae_req_bh, req->bestjae_atomic_num);
+			 goto skip;
+		 }
+	 }
+	 //-bestjae
+
+
 	ret = nvme_init_iod(req, dev);
 	if (ret != BLK_MQ_RQ_QUEUE_OK)
 		goto out_free_cmd;
@@ -891,9 +871,6 @@ static int nvme_queue_rq(struct blk_mq_hw_ctx *hctx,
 	
 	blk_mq_start_request(req);
 	
-	//bestjae
-again :
-
 	spin_lock_irq(&nvmeq->q_lock);
 	if (unlikely(nvmeq->cq_vector < 0)) {
 		ret = BLK_MQ_RQ_QUEUE_ERROR;
@@ -901,20 +878,6 @@ again :
 		goto out_cleanup_iod;
 	}
 	__nvme_submit_cmd(nvmeq, &cmnd);
-	
-	//bestjae 
-	/*
-	if(atomic_read(&bestjae_atomic) == 1) {
-		if( (cmnd.rw.rsvd2>>32) == 5) {
-			if (bestjae_cnt == 1) {
-					nvme_process_cq(&bestjae_nvme_queue1);
-					//nvme_process_cq(&bestjae_nvme_queue2);
-					bestjae_cnt = 0;
-			}
-		}
-	}
-	*/
-
 	nvme_process_cq(nvmeq);
 	spin_unlock_irq(&nvmeq->q_lock);
 	return BLK_MQ_RQ_QUEUE_OK;

@@ -39,6 +39,9 @@
 #include "acl.h"
 #include "xattr.h"
 
+
+extern atomic_t bestjae_atomic;
+
 static int __ext2_write_inode(struct inode *inode, int do_sync);
 
 /*
@@ -48,6 +51,10 @@ static inline int ext2_inode_is_fast_symlink(struct inode *inode)
 {
 	int ea_blocks = EXT2_I(inode)->i_file_acl ?
 		(inode->i_sb->s_blocksize >> 9) : 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	return (S_ISLNK(inode->i_mode) &&
 		inode->i_blocks - ea_blocks == 0);
@@ -58,6 +65,10 @@ static void ext2_truncate_blocks(struct inode *inode, loff_t offset);
 static void ext2_write_failed(struct address_space *mapping, loff_t to)
 {
 	struct inode *inode = mapping->host;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (to > inode->i_size) {
 		truncate_pagecache(inode, inode->i_size);
@@ -72,6 +83,10 @@ void ext2_evict_inode(struct inode * inode)
 {
 	struct ext2_block_alloc_info *rsv;
 	int want_delete = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (!inode->i_nlink && !is_bad_inode(inode)) {
 		want_delete = 1;
@@ -169,6 +184,10 @@ static int ext2_block_to_path(struct inode *inode,
 		double_blocks = (1 << (ptrs_bits * 2));
 	int n = 0;
 	int final = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (i_block < 0) {
 		ext2_msg(inode->i_sb, KERN_WARNING,
@@ -239,6 +258,10 @@ static Indirect *ext2_get_branch(struct inode *inode,
 	struct super_block *sb = inode->i_sb;
 	Indirect *p = chain;
 	struct buffer_head *bh;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	*err = 0;
 	/* i_data is not going away, no lock needed */
@@ -297,6 +320,10 @@ static ext2_fsblk_t ext2_find_near(struct inode *inode, Indirect *ind)
 	__le32 *p;
 	ext2_fsblk_t bg_start;
 	ext2_fsblk_t colour;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	/* Try to find previous block */
 	for (p = ind->p - 1; p >= start; p--)
@@ -330,6 +357,10 @@ static inline ext2_fsblk_t ext2_find_goal(struct inode *inode, long block,
 					  Indirect *partial)
 {
 	struct ext2_block_alloc_info *block_i;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	block_i = EXT2_I(inode)->i_block_alloc_info;
 
@@ -362,6 +393,10 @@ ext2_blks_to_allocate(Indirect * branch, int k, unsigned long blks,
 		int blocks_to_boundary)
 {
 	unsigned long count = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	/*
 	 * Simple case, [t,d]Indirect block(s) has not allocated yet
@@ -403,6 +438,10 @@ static int ext2_alloc_blocks(struct inode *inode,
 	int index = 0;
 	ext2_fsblk_t current_block = 0;
 	int ret = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	/*
 	 * Here we try to allocate the requested multiple blocks at once,
@@ -483,6 +522,10 @@ static int ext2_alloc_branch(struct inode *inode,
 	int num;
 	ext2_fsblk_t new_blocks[4];
 	ext2_fsblk_t current_block;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	num = ext2_alloc_blocks(inode, goal, indirect_blks,
 				*blks, new_blocks, &err);
@@ -560,6 +603,10 @@ static void ext2_splice_branch(struct inode *inode,
 	int i;
 	struct ext2_block_alloc_info *block_i;
 	ext2_fsblk_t current_block;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	block_i = EXT2_I(inode)->i_block_alloc_info;
 
@@ -633,6 +680,10 @@ static int ext2_get_blocks(struct inode *inode,
 	struct ext2_inode_info *ei = EXT2_I(inode);
 	int count = 0;
 	ext2_fsblk_t first_block = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	BUG_ON(maxblocks == 0);
 
@@ -779,6 +830,10 @@ int ext2_get_block(struct inode *inode, sector_t iblock,
 	bool new = false, boundary = false;
 	u32 bno;
 	int ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	ret = ext2_get_blocks(inode, iblock, max_blocks, &bno, &new, &boundary,
 			create);
@@ -806,6 +861,10 @@ static int ext2_iomap_begin(struct inode *inode, loff_t offset, loff_t length,
 	bool new = false, boundary = false;
 	u32 bno;
 	int ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	ret = ext2_get_blocks(inode, first_block, max_blocks,
 			&bno, &new, &boundary, flags & IOMAP_WRITE);
@@ -841,6 +900,10 @@ static int
 ext2_iomap_end(struct inode *inode, loff_t offset, loff_t length,
 		ssize_t written, unsigned flags, struct iomap *iomap)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	fs_put_dax(iomap->dax_dev);
 	if (iomap->type == IOMAP_MAPPED &&
 	    written < length &&
@@ -861,17 +924,29 @@ const struct iomap_ops ext2_iomap_ops;
 int ext2_fiemap(struct inode *inode, struct fiemap_extent_info *fieinfo,
 		u64 start, u64 len)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return generic_block_fiemap(inode, fieinfo, start, len,
 				    ext2_get_block);
 }
 
 static int ext2_writepage(struct page *page, struct writeback_control *wbc)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return block_write_full_page(page, ext2_get_block, wbc);
 }
 
 static int ext2_readpage(struct file *file, struct page *page)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return mpage_readpage(page, ext2_get_block);
 }
 
@@ -879,6 +954,10 @@ static int
 ext2_readpages(struct file *file, struct address_space *mapping,
 		struct list_head *pages, unsigned nr_pages)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return mpage_readpages(mapping, pages, nr_pages, ext2_get_block);
 }
 
@@ -888,7 +967,10 @@ ext2_write_begin(struct file *file, struct address_space *mapping,
 		struct page **pagep, void **fsdata)
 {
 	int ret;
-	printk("bestjae : %s\n",__FUNCTION__);
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	ret = block_write_begin(mapping, pos, len, flags, pagep,
 				ext2_get_block);
@@ -902,6 +984,10 @@ static int ext2_write_end(struct file *file, struct address_space *mapping,
 			struct page *page, void *fsdata)
 {
 	int ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	ret = generic_write_end(file, mapping, pos, len, copied, page, fsdata);
 	if (ret < len)
@@ -915,6 +1001,10 @@ ext2_nobh_write_begin(struct file *file, struct address_space *mapping,
 		struct page **pagep, void **fsdata)
 {
 	int ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	ret = nobh_write_begin(mapping, pos, len, flags, pagep, fsdata,
 			       ext2_get_block);
@@ -926,11 +1016,19 @@ ext2_nobh_write_begin(struct file *file, struct address_space *mapping,
 static int ext2_nobh_writepage(struct page *page,
 			struct writeback_control *wbc)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return nobh_writepage(page, ext2_get_block, wbc);
 }
 
 static sector_t ext2_bmap(struct address_space *mapping, sector_t block)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return generic_block_bmap(mapping,block,ext2_get_block);
 }
 
@@ -943,6 +1041,10 @@ ext2_direct_IO(struct kiocb *iocb, struct iov_iter *iter)
 	size_t count = iov_iter_count(iter);
 	loff_t offset = iocb->ki_pos;
 	ssize_t ret;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (WARN_ON_ONCE(IS_DAX(inode)))
 		return -EIO;
@@ -1049,6 +1151,10 @@ static Indirect *ext2_find_shared(struct inode *inode,
 {
 	Indirect *partial, *p;
 	int k, err;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	*top = 0;
 	for (k = depth; k > 1 && !offsets[k-1]; k--)
@@ -1104,6 +1210,10 @@ static inline void ext2_free_data(struct inode *inode, __le32 *p, __le32 *q)
 {
 	unsigned long block_to_free = 0, count = 0;
 	unsigned long nr;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	for ( ; p < q ; p++) {
 		nr = le32_to_cpu(*p);
@@ -1144,6 +1254,10 @@ static void ext2_free_branches(struct inode *inode, __le32 *p, __le32 *q, int de
 {
 	struct buffer_head * bh;
 	unsigned long nr;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (depth--) {
 		int addr_per_block = EXT2_ADDR_PER_BLOCK(inode->i_sb);
@@ -1190,6 +1304,10 @@ static void __ext2_truncate_blocks(struct inode *inode, loff_t offset)
 	unsigned blocksize;
 	blocksize = inode->i_sb->s_blocksize;
 	iblock = (offset + blocksize-1) >> EXT2_BLOCK_SIZE_BITS(inode->i_sb);
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 #ifdef CONFIG_FS_DAX
 	WARN_ON(!rwsem_is_locked(&ei->dax_sem));
@@ -1265,6 +1383,10 @@ do_indirects:
 
 static void ext2_truncate_blocks(struct inode *inode, loff_t offset)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	/*
 	 * XXX: it seems like a bug here that we don't allow
 	 * IS_APPEND inode to have blocks-past-i_size trimmed off.
@@ -1289,6 +1411,10 @@ static void ext2_truncate_blocks(struct inode *inode, loff_t offset)
 static int ext2_setsize(struct inode *inode, loff_t newsize)
 {
 	int error;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (!(S_ISREG(inode->i_mode) || S_ISDIR(inode->i_mode) ||
 	    S_ISLNK(inode->i_mode)))
@@ -1337,6 +1463,10 @@ static struct ext2_inode *ext2_get_inode(struct super_block *sb, ino_t ino,
 	unsigned long block;
 	unsigned long offset;
 	struct ext2_group_desc * gdp;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	*p = NULL;
 	if ((ino != EXT2_ROOT_INO && ino < EXT2_FIRST_INO(sb)) ||
@@ -1374,6 +1504,10 @@ Egdp:
 
 void ext2_set_inode_flags(struct inode *inode)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	unsigned int flags = EXT2_I(inode)->i_flags;
 
 	inode->i_flags &= ~(S_SYNC | S_APPEND | S_IMMUTABLE | S_NOATIME |
@@ -1402,6 +1536,10 @@ struct inode *ext2_iget (struct super_block *sb, unsigned long ino)
 	int n;
 	uid_t i_uid;
 	gid_t i_gid;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	inode = iget_locked(sb, ino);
 	if (!inode)
@@ -1543,6 +1681,10 @@ static int __ext2_write_inode(struct inode *inode, int do_sync)
 	struct ext2_inode * raw_inode = ext2_get_inode(sb, ino, &bh);
 	int n;
 	int err = 0;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 
 	if (IS_ERR(raw_inode))
  		return -EIO;
@@ -1638,6 +1780,10 @@ static int __ext2_write_inode(struct inode *inode, int do_sync)
 
 int ext2_write_inode(struct inode *inode, struct writeback_control *wbc)
 {
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
 	return __ext2_write_inode(inode, wbc->sync_mode == WB_SYNC_ALL);
 }
 
@@ -1645,6 +1791,12 @@ int ext2_setattr(struct dentry *dentry, struct iattr *iattr)
 {
 	struct inode *inode = d_inode(dentry);
 	int error;
+	//bestjae
+	if(atomic_read(&bestjae_atomic) == 1) {
+		trace_printk("bestjae : %s\n",__FUNCTION__);
+	}
+
+
 
 	error = setattr_prepare(dentry, iattr);
 	if (error)
