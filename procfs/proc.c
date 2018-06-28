@@ -4,7 +4,7 @@
  * File Name : hello_mod.c
  * Purpose : 
  * Creation Date : 2018-03-12
- * Last Modified : 2018-03-27 20:08:44
+ * Last Modified : 2018-06-28 14:03:58
  * Created By : Yongjae Choi <bestjae@naver.com>
  *  
  */
@@ -74,8 +74,10 @@ ssize_t write_proc(struct file *filp, const char *buf, size_t count, loff_t *off
 	
 	len_written = simple_write_to_buffer(buf_write,COUNT_MAX,offp,buf,count);
 	if(!kstrtol(buf_write,0,&temp_write)){
-		if( temp_write > 0)
+		if( temp_write == 1)
 			atomic_set(&bestjae_atomic,1);
+		else if(temp_write > 1)	
+			atomic_set(&bestjae_atomic,2);
 		else if(temp_write == 0)	
 			atomic_set(&bestjae_atomic,0);
 		else

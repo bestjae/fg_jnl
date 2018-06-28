@@ -20,8 +20,8 @@ __attribute__((section("__versions"))) = {
 	{ 0xb587fcbd, __VMLINUX_SYMBOL_STR(module_layout) },
 	{ 0xfe7396c4, __VMLINUX_SYMBOL_STR(generic_file_llseek) },
 	{ 0xb887aa44, __VMLINUX_SYMBOL_STR(kthread_stop) },
-	{ 0x6748018e, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
-	{ 0x3fda5754, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xf850c7b, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0xd48ad74d, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0xe6e4df53, __VMLINUX_SYMBOL_STR(proc_create_data) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0x779a18af, __VMLINUX_SYMBOL_STR(kstrtoll) },
@@ -39,4 +39,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "20BD7F28CEFB3CC61C319BA");
+MODULE_INFO(srcversion, "35E78371CF0BE4E6746866D");

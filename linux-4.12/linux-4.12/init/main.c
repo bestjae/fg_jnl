@@ -96,6 +96,7 @@
 #include <asm/cacheflush.h>
 
 extern unsigned int bestjae_global;
+extern atomic_t bestjae_atomic;
 static int kernel_init(void *);
 
 extern void init_IRQ(void);
@@ -677,7 +678,7 @@ asmlinkage __visible void __init start_kernel(void)
 
 	//bestjae
 	printk("bestjae : bestjae kernel-initial_compile-mode\n");
-
+	//atomic_inc(&bestjae_atomic);
 
 	if (efi_enabled(EFI_RUNTIME_SERVICES)) {
 		efi_free_boot_services();

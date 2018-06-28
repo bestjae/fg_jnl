@@ -59,8 +59,9 @@ DEFINE_IDA(blk_queue_ida);
 
 //bestjae
 
+unsigned int bestjae_fs_atomic;
 extern atomic_t bestjae_atomic;
-extern unsigned int bestjae_global;
+extern unsigned int bestjae_global_atomic;
 
 /*
  * For the allocated request tables
@@ -1651,11 +1652,13 @@ void blk_init_request_from_bio(struct request *req, struct bio *bio)
 	req->__sector = bio->bi_iter.bi_sector;
 	if(atomic_read(&bestjae_atomic) == 1 ) //bestjae
 	{
-		req->bestjae_req_bh = bio->bi_iter.bestjae_bvec;
-		req->bestjae_atomic_num = 4; // Temporary cord
+		//req->bestjae_req_bh = bio->bi_iter.bestjae_bvec;
+		req->bestjae_req_bh = bestjae_global_atomic;
+		req->bestjae_atomic_num = bestjae_fs_atomic; 
+		//req->bestjae_atomic_num = 3; // Temporary code
 		bdevname(bio->bi_bdev,bestjae_b);
 		if(!strncmp(bestjae_dev_name,bestjae_b,BDEVNAME_SIZE)){
-			printk("bestjae : (%s) req->bestjae_req_bh-%d\n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
+			trace_printk("bestjae : (%s) req->bestjae_req_bh-%d\n",__FUNCTION__,req->bestjae_req_bh);
 		}
 	}
 	if (ioprio_valid(bio_prio(bio)))
@@ -3507,3 +3510,5 @@ int __init blk_dev_init(void)
 
 	return 0;
 }
+
+EXPORT_SYMBOL(bestjae_fs_atomic);

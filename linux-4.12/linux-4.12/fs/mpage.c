@@ -63,7 +63,7 @@ static struct bio *mpage_bio_submit(int op, int op_flags, struct bio *bio)
 {
 	if(atomic_read(&bestjae_atomic) == 1) {
 		bio->bi_iter.bestjae_bvec = bestjae_fat_id;
-		printk("bestjae : %s - bestjae_bvec-%d \n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
+		trace_printk("bestjae : %s - bestjae_bvec-%d \n",__FUNCTION__,bio->bi_iter.bestjae_bvec);
 	}
 	bio->bi_end_io = mpage_end_io;
 	bio_set_op_attrs(bio, op, op_flags);
@@ -714,7 +714,7 @@ mpage_writepages(struct address_space *mapping,
 	int ret;
 
 	if(atomic_read(&bestjae_atomic) == 1) {
-		printk("bestjae : %s \n",__FUNCTION__);
+		trace_printk("bestjae : %s \n",__FUNCTION__);
 	}
 	blk_start_plug(&plug);
 

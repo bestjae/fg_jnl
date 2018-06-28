@@ -805,7 +805,7 @@ static int vfat_create(struct inode *dir, struct dentry *dentry, umode_t mode,
 	/* timestamp is already written, so mark_inode_dirty() is unneeded. */
 	
 	//bestjae
-	printk("bestjae : vfat_create\n");
+	//trace_printk("bestjae : vfat_create\n");
 
 
 

@@ -145,10 +145,66 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 	else
 	  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
 	fi
-	linux	/boot/vmlinuz-4.13.0-43-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff
-	initrd	/boot/initrd.img-4.13.0-43-generic
+	linux	/boot/vmlinuz-4.13.0-45-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff
+	initrd	/boot/initrd.img-4.13.0-45-generic
 }
 submenu 'Ubuntu용 고급 설정' $menuentry_id_option 'gnulinux-advanced-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
+	menuentry '리눅스 Ubuntu가 있는, 4.13.0-45-generic입니다' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-45-generic-advanced-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
+		recordfail
+		load_video
+		gfxmode $linux_gfx_mode
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_msdos
+		insmod ext2
+		set root='hd0,msdos1'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		else
+		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		fi
+		echo	'리눅스 4.13.0-45-generic를 불러옵니다 ...'
+		linux	/boot/vmlinuz-4.13.0-45-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff
+		echo	'첫 램 디스크를 불러옵니다 ...'
+		initrd	/boot/initrd.img-4.13.0-45-generic
+	}
+	menuentry 'Ubuntu, with Linux 4.13.0-45-generic (upstart)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-45-generic-init-upstart-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
+		recordfail
+		load_video
+		gfxmode $linux_gfx_mode
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_msdos
+		insmod ext2
+		set root='hd0,msdos1'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		else
+		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		fi
+		echo	'리눅스 4.13.0-45-generic를 불러옵니다 ...'
+		linux	/boot/vmlinuz-4.13.0-45-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff init=/sbin/upstart
+		echo	'첫 램 디스크를 불러옵니다 ...'
+		initrd	/boot/initrd.img-4.13.0-45-generic
+	}
+	menuentry 'Ubuntu, with Linux 4.13.0-45-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-45-generic-recovery-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
+		recordfail
+		load_video
+		insmod gzio
+		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+		insmod part_msdos
+		insmod ext2
+		set root='hd0,msdos1'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		else
+		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
+		fi
+		echo	'리눅스 4.13.0-45-generic를 불러옵니다 ...'
+		linux	/boot/vmlinuz-4.13.0-45-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro recovery nomodeset 
+		echo	'첫 램 디스크를 불러옵니다 ...'
+		initrd	/boot/initrd.img-4.13.0-45-generic
+	}
 	menuentry '리눅스 Ubuntu가 있는, 4.13.0-43-generic입니다' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-43-generic-advanced-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
 		recordfail
 		load_video
@@ -204,62 +260,6 @@ submenu 'Ubuntu용 고급 설정' $menuentry_id_option 'gnulinux-advanced-8e3b72
 		linux	/boot/vmlinuz-4.13.0-43-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro recovery nomodeset 
 		echo	'첫 램 디스크를 불러옵니다 ...'
 		initrd	/boot/initrd.img-4.13.0-43-generic
-	}
-	menuentry '리눅스 Ubuntu가 있는, 4.13.0-41-generic입니다' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-41-generic-advanced-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
-		recordfail
-		load_video
-		gfxmode $linux_gfx_mode
-		insmod gzio
-		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
-		insmod part_msdos
-		insmod ext2
-		set root='hd0,msdos1'
-		if [ x$feature_platform_search_hint = xy ]; then
-		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		else
-		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		fi
-		echo	'리눅스 4.13.0-41-generic를 불러옵니다 ...'
-		linux	/boot/vmlinuz-4.13.0-41-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff
-		echo	'첫 램 디스크를 불러옵니다 ...'
-		initrd	/boot/initrd.img-4.13.0-41-generic
-	}
-	menuentry 'Ubuntu, with Linux 4.13.0-41-generic (upstart)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-41-generic-init-upstart-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
-		recordfail
-		load_video
-		gfxmode $linux_gfx_mode
-		insmod gzio
-		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
-		insmod part_msdos
-		insmod ext2
-		set root='hd0,msdos1'
-		if [ x$feature_platform_search_hint = xy ]; then
-		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		else
-		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		fi
-		echo	'리눅스 4.13.0-41-generic를 불러옵니다 ...'
-		linux	/boot/vmlinuz-4.13.0-41-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro  quiet splash $vt_handoff init=/sbin/upstart
-		echo	'첫 램 디스크를 불러옵니다 ...'
-		initrd	/boot/initrd.img-4.13.0-41-generic
-	}
-	menuentry 'Ubuntu, with Linux 4.13.0-41-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.13.0-41-generic-recovery-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
-		recordfail
-		load_video
-		insmod gzio
-		if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
-		insmod part_msdos
-		insmod ext2
-		set root='hd0,msdos1'
-		if [ x$feature_platform_search_hint = xy ]; then
-		  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		else
-		  search --no-floppy --fs-uuid --set=root 8e3b722c-3243-45a4-bcd6-a31f4131ac3c
-		fi
-		echo	'리눅스 4.13.0-41-generic를 불러옵니다 ...'
-		linux	/boot/vmlinuz-4.13.0-41-generic root=UUID=8e3b722c-3243-45a4-bcd6-a31f4131ac3c ro recovery nomodeset 
-		echo	'첫 램 디스크를 불러옵니다 ...'
-		initrd	/boot/initrd.img-4.13.0-41-generic
 	}
 	menuentry '리눅스 Ubuntu가 있는, 4.12.0입니다' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.12.0-advanced-8e3b722c-3243-45a4-bcd6-a31f4131ac3c' {
 		recordfail
